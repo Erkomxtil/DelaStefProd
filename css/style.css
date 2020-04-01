@@ -1,0 +1,354 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  #main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+  }
+}
+
+/* desktop */
+#modalLink {
+  display: none;
+}
+
+#mainNav {
+  background-color: #009FE3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  width: 100%;
+  color: white;
+}
+
+#mainNav a {
+  color: white;
+}
+
+#mainNav .logo {
+  position: relative;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+#mainNav .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainNav .liens {
+  position: relative;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+#mainNav .liens ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 6%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background: url("../images/fond-site.jpg") top left #0009f3;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer #contact {
+  border: 2px solid white;
+  padding: 2px;
+}
+
+footer #socials p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #socials p a {
+  padding-left: 4%;
+}
+
+/* Mobiles */
+@media screen and (max-width: 1024px) {
+  #modalLink {
+    display: none;
+  }
+  #modalLink.isActive {
+    background: url("../images/fond-site.jpg") top left #0009f3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #modalLink.isActive li {
+    text-align: center;
+  }
+  #modalLink.isActive li a {
+    color: white;
+    text-transform: uppercase;
+  }
+  #close {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 4.5%;
+    right: 1%;
+  }
+  #close::before {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: -6px;
+  }
+  #close::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: -6px;
+  }
+  #close:hover {
+    cursor: pointer;
+  }
+  #mainNav .liens {
+    margin-right: 2%;
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+  #mainNav .liens::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+  #mainNav .liens::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  #mainNav .liens:hover {
+    cursor: pointer;
+  }
+  #mainNav .liens ul {
+    display: none;
+  }
+  /* footer */
+  #socials {
+    display: none;
+  }
+}
+
+.logo {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slideLogo;
+          animation-name: slideLogo;
+}
+
+.liens {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slideLink;
+          animation-name: slideLink;
+}
+
+@-webkit-keyframes slideLogo {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideLogo {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@-webkit-keyframes slideLink {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideLink {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+#main.accueil {
+  height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main.accueil h1 {
+  color: red;
+}
+
+#main.cv h1 {
+  color: blue;
+}
+
+body {
+  font-family: 'Electrolize', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

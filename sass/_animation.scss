@@ -1,0 +1,32 @@
+.logo{
+  animation-duration: 1s;
+  animation-name: slideLogo;
+}
+.liens{
+  animation-duration: 1s;
+  animation-name: slideLink
+}
+
+@keyframes slideLogo {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideLink {
+  from {
+    opacity: 0;
+    margin-top: -80px;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}

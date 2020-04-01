@@ -1,0 +1,155 @@
+/* desktop */
+#modalLink{
+  display: none;
+}
+#mainNav{
+  background-color: $blue;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  color: white;
+
+  a{
+    color: white;
+  }
+  .logo{
+    position: relative;
+    flex: 3;
+    a{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .liens{
+    position: relative;
+    flex: 4;
+    ul{
+      display: flex;
+      padding-right: 6%;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background: url("../images/fond-site.jpg") top left #0009f3;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  a{
+    color:white;
+  }
+  #contact{
+    border: 2px solid white;
+    padding: 2px;
+  }
+  #socials{
+    p{
+      display: flex;
+      align-items: center;
+      a{
+        padding-left: 4%;
+      }
+    }
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 1024px){
+  #modalLink{
+    display: none;
+    &.isActive{
+      background: url("../images/fond-site.jpg") top left #0009f3;
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      li{
+        text-align: center;
+        a{
+          color:white;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #close{  
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 4.5%;
+    right: 1%;
+    &::before{
+      content: "";
+      display: block;
+      background-color: white;
+      width: 20px;
+      height: 3px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 10px;
+      left: -6px;
+    }
+    &::after{
+      content: "";
+      display: block;
+      background-color: white;
+      width: 20px;
+      height: 3px;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 10px;
+      left: -6px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  } 
+  #mainNav{
+    .liens{
+      margin-right: 2%;
+      position: relative;
+      flex: 0;
+      &::before{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 10px;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+      }
+      &::after{
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+      }
+      &:hover{
+        cursor: pointer;
+      }
+      ul{
+        display: none;
+      }
+    }
+  }
+
+  /* footer */
+  #socials{
+    display: none;
+  }
+}
