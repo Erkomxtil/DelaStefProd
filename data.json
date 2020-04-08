@@ -21,5 +21,70 @@
         "paragraphe": "Je vous invite à me contacter soi pour une proposition de travail, soi pour me faire une remarque pertinente sur mon site ou tout simplement pour dire bonjour. Bonne visite."
       }
     ]
-  }
+  },
+  "realisations": [
+    {
+      "date": "Juin 2019 à ce jour",
+      "entreprise": "icf habitat",
+      "fonction": "Intégrateur web",
+      "environement": "HTML / CSS, Java, IKOS",
+      "description": "Création de courrier via le CMS IKOS"
+    },
+    {
+      "date": "Mars 2019 à Juin 2019",
+      "entreprise": "sfr",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub",
+      "description": "Création du mini site SFR pulse from scratch"
+    },
+    {
+      "date": "Septembre 2018 à février 2019",
+      "entreprise": "lvmh",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, JSon, SALES FORCE",
+      "description": "Développement du site fenty.com pour la maison LVMH"
+    },
+    {
+      "date": "Janvier 2017 à août 2018",
+      "entreprise": "pierre et vacances",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, SVN, CSS NEXT",
+      "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive."
+    },
+    {
+      "date": "Novembre 2016 à décembre 2016",
+      "entreprise": "weka",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
+      "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS."
+    },
+    {
+      "date": "Août 2016 à octobre 2016",
+      "entreprise": "maison du monde",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
+      "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters"
+    },
+    {
+      "date": "Janvier 2016 à juillet 2016",
+      "entreprise": "editialis",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, PHP",
+      "description": "Refonte du site e-marketing et newsletters"
+    },
+    {
+      "date": "Janvier 2015 à décembre 2015",
+      "entreprise": "newsmed",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, Javascript",
+      "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire"
+    },
+    {
+      "date": "Juin 2014 à novembre 2014",
+      "entreprise": "websiting",
+      "fonction": "Intégrateur web",
+      "environement": "HTML5 / CSS3, Javascript, PHP",
+      "description": "Création de site complet via le CMS Wordpress"
+    }
+  ]
 }
