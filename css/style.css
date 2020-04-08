@@ -341,7 +341,44 @@ footer #socials p a {
 }
 
 #main.accueil h1 {
-  color: red;
+  color: #1F4A99;
+  font-size: 4em;
+}
+
+#main.accueil .fonction {
+  color: #1C9CD9;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+#main.accueil .linkedin {
+  margin-bottom: 0.5em;
+}
+
+#main.accueil .linkedin a {
+  color: #1F4A99;
+}
+
+#main.accueil .texteAccueil {
+  margin-bottom: 0.5em;
+}
+
+/* version mobile */
+@media screen and (max-width: 1024px) {
+  #main.accueil {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  #main.accueil h1 {
+    font-size: 2em;
+  }
+  #main.accueil .fonction {
+    font-size: 1.5em;
+  }
+  #main.accueil .texteAccueil {
+    font-size: 0.9em;
+  }
 }
 
 #main.cv h1 {

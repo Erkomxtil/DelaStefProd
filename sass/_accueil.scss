@@ -4,8 +4,38 @@
   flex-direction: column;
   justify-content: center;
 
-  h1{
-    color: red;
+  h1 {
+    color: $darkBlueTexte;
+    font-size: 4em;
   }
+  .fonction {
+    color: $lightBlueTexte;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  .linkedin {
+    margin-bottom: 0.5em;
+    a {
+      color: $darkBlueTexte;
+    }
+  }
+  .texteAccueil {
+    margin-bottom: 0.5em;
+  }
+}
 
+/* version mobile */ 
+@media screen and (max-width: 1024px) {
+  #main.accueil {
+    justify-content: unset;
+    h1 {
+      font-size: 2em;
+    }
+    .fonction {
+      font-size: 1.5em;
+    }
+    .texteAccueil {
+      font-size: 0.9em;
+    }
+  }
 }

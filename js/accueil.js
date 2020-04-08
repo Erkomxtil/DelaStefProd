@@ -27,7 +27,12 @@ function accueil () {
 
 /* Affichage de la page d'accueil */
 function affichagePageAccueil () {
-  ajaxGet("http://127.0.0.1:5500/data.json", (reponse) => {
+  /* En local finalUrlSite va permettre d'avoir les données JSON à enlever par la suite et mettre la bonne url */
+  let urlSite = document.location.href
+  let newUrlSite = urlSite.split("1:")
+  let finalUrlSite = newUrlSite[1].substr(0,5)
+  
+  ajaxGet("http://127.0.0.1:"+ finalUrlSite +"/data.json", (reponse) => {
     let dataInfos = JSON.parse(reponse)
     
     let title = document.createElement("h1")
@@ -39,7 +44,9 @@ function affichagePageAccueil () {
     main.innerHTML = ""
     main.className = "accueil"
     title.textContent = infosTitle.prenom + " " + infosTitle.nom
+    fonction.className = "fonction"
     fonction.textContent = infosTitle.fonction
+    linkedIn.className = "linkedin"
     linkedIn.innerHTML = "<a href="+ infosTitle.linkedInUrl.lien +">" + infosTitle.linkedInUrl.texte + "</a>"     
     
     main.appendChild(title)
@@ -47,10 +54,11 @@ function affichagePageAccueil () {
     main.appendChild(linkedIn)
     for (let texte of textes) {
       let paragraphe = document.createElement("p")
+      paragraphe.className = "texteAccueil"
       paragraphe.textContent = texte.paragraphe
       main.appendChild(paragraphe)
     }
   })
 }
 
-export {accueil}
+export {accueil, affichagePageAccueil}
