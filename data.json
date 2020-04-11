@@ -28,63 +28,72 @@
       "entreprise": "icf habitat",
       "fonction": "Intégrateur web",
       "environement": "HTML / CSS, Java, IKOS",
-      "description": "Création de courrier via le CMS IKOS"
+      "description": "Création de courrier via le CMS IKOS",
+      "logo": "/images/logo-entreprise/icf-habitat.png"
     },
     {
       "date": "Mars 2019 à Juin 2019",
       "entreprise": "sfr",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub",
-      "description": "Création du mini site SFR pulse from scratch"
+      "description": "Création du mini site SFR pulse from scratch",
+      "logo": "/images/logo-entreprise/sfr-altice.png"
     },
     {
       "date": "Septembre 2018 à février 2019",
       "entreprise": "lvmh",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, JSon, SALES FORCE",
-      "description": "Développement du site fenty.com pour la maison LVMH"
+      "description": "Développement du site fenty.com pour la maison LVMH",
+      "logo": "/images/logo-entreprise/fenty.png"
     },
     {
       "date": "Janvier 2017 à août 2018",
       "entreprise": "pierre et vacances",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, SVN, CSS NEXT",
-      "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive."
+      "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive.",
+      "logo": "/images/logo-entreprise/pierre-et-vacances.png"
     },
     {
       "date": "Novembre 2016 à décembre 2016",
       "entreprise": "weka",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
-      "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS."
+      "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS.",
+      "logo": "/images/logo-entreprise/weka.png"
     },
     {
       "date": "Août 2016 à octobre 2016",
       "entreprise": "maison du monde",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
-      "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters"
+      "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters",
+      "logo": "/images/logo-entreprise/maison-du-monde.png"
     },
     {
       "date": "Janvier 2016 à juillet 2016",
       "entreprise": "editialis",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, PHP",
-      "description": "Refonte du site e-marketing et newsletters"
+      "description": "Refonte du site e-marketing et newsletters",
+      "logo": "/images/logo-entreprise/editialis.png"
     },
     {
       "date": "Janvier 2015 à décembre 2015",
       "entreprise": "newsmed",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript",
-      "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire"
+      "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire",
+      "logo": "/images/logo-entreprise/newsmed.png"
     },
     {
       "date": "Juin 2014 à novembre 2014",
       "entreprise": "websiting",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript, PHP",
-      "description": "Création de site complet via le CMS Wordpress"
+      "description": "Création de site complet via le CMS Wordpress",
+      "logo": "/images/logo-entreprise/websiting.png"
     }
   ]
 }
