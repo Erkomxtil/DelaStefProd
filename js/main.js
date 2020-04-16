@@ -1,5 +1,5 @@
 import { ajaxGet } from './ajax.js'
-import { navigation } from './nav.js'
+import { navigation, mobileNavLink } from './nav.js'
 import { accueil, affichagePageAccueil } from './accueil.js'
 import { realisations, affichagePageRealisations } from './realisations.js'
 import { contact } from './contact.js'
@@ -8,6 +8,7 @@ import { contact } from './contact.js'
 function initialisation () {
   ajaxGet()
   navigation()
+  mobileNavLink()
   affichagePageAccueil()
   accueil()
   realisations()

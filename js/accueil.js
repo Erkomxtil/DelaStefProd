@@ -8,21 +8,6 @@ function accueil () {
   accueilBtn.addEventListener("click", (e) => { 
     affichagePageAccueil()
   })
-
-  /* Gestion des click sur la navigation mobile */
-  let liensMobile = document.querySelectorAll("#mobileNav li")
-  for (let lien of liensMobile) {
-    lien.addEventListener("click", (e) => {
-      let classLink = e.target.textContent.toLowerCase()
-      let accueilMobile = document.querySelector("#mobileNav ." + classLink)
-      console.log(accueilMobile)
-
-      let modalClose = document.getElementById("modalLink")
-      modalClose.classList.remove("isActive")
-      /* J'affiche la page d'acceuil */
-      affichagePageAccueil()
-    })
-  }
 }
 
 /* Affichage de la page d'accueil */

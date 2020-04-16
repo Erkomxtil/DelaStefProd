@@ -379,6 +379,9 @@ footer #socials p a {
   #main.accueil .texteAccueil {
     font-size: 0.9em;
   }
+  #mobileNav li {
+    padding: 10px;
+  }
 }
 
 #main.cv h1 {
