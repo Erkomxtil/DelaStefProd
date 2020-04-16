@@ -1,0 +1,13 @@
+#main.realisations {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 160px;
+
+  .realisationsBlock{
+    width: 50%;
+    .imgLink {
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+}

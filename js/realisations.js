@@ -20,12 +20,12 @@ function affichagePageRealisations () {
     let realisationsInfos = dataInfos.realisations
     main.innerHTML = ""
     main.className = "realisations"
-    main.innerHTML = "<h1>Mes réalisations</h1>"
 
     for (let i = 0; i < realisationsInfos.length ; i++){
       let wrapper = document.createElement("div")
       let imagesBlock = document.createElement("img")
       wrapper.className = "realisationsBlock"
+      imagesBlock.className = "imgLink"
       imagesBlock.src = realisationsInfos[i].logo
       imagesBlock.alt = realisationsInfos[i].entreprise
       imagesBlock.dataset.numeroLogo = i
@@ -42,12 +42,12 @@ function affichagePageRealisations () {
         let logo = realisationsInfos[numeroLogo].logo
 
         let paragraphePhoto = document.createElement("p")
-        paragraphePhoto.innerHTML = '<img src="'+ logo +'" alt="'+ entreprise + '"><br>'+ date + '<br>Entreprise : ' + entreprise + '<br>Fonction : ' + fonction + '<br>Environement : ' + environement + '<br>Description : ' + description
+        paragraphePhoto.innerHTML = '<img class="imgLink" src="'+ logo +'" alt="'+ entreprise + '"><br>'+ date + '<br>Entreprise : ' + entreprise + '<br>Fonction : ' + fonction + '<br>Environement : ' + environement + '<br>Description : ' + description
 
         main.appendChild(paragraphePhoto)
       })
+      wrapper.appendChild(imagesBlock)
       main.appendChild(wrapper)
-      main.appendChild(imagesBlock)
     }  
   })
 }

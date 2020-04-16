@@ -388,6 +388,24 @@ footer #socials p a {
   color: blue;
 }
 
+#main.realisations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 160px;
+}
+
+#main.realisations .realisationsBlock {
+  width: 50%;
+}
+
+#main.realisations .realisationsBlock .imgLink {
+  cursor: pointer;
+  width: 100%;
+}
+
 body {
   font-family: 'Electrolize', sans-serif;
 }
