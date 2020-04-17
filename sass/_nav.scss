@@ -22,6 +22,9 @@
       align-items: center;
     }
   }
+  #titreNavigation {
+    display: none;
+  }
   .liens{
     position: relative;
     flex: 4;
@@ -117,6 +120,15 @@ footer{
     }
   } 
   #mainNav{
+    .logo {
+      flex: unset;
+    }
+    #titreNavigation {
+      display: block;
+      h1 {
+        text-transform: uppercase;
+      }
+    }
     .liens{
       margin-right: 2%;
       position: relative;

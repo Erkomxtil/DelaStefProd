@@ -20,6 +20,14 @@ function affichagePageAccueil () {
   ajaxGet("http://127.0.0.1:"+ finalUrlSite +"/data.json", (reponse) => {
     let dataInfos = JSON.parse(reponse)
     
+    /* Titre pour la partie mobile */
+    let headerTitle = document.getElementById("titreNavigation")
+    let titleH1 = document.createElement("h1")
+    headerTitle.innerHTML = ""
+    titleH1.textContent = "acceuil"
+    headerTitle.appendChild(titleH1)
+
+    /* Le contenu de la partie main */
     let title = document.createElement("h1")
     let infosTitle = dataInfos.accueil.title
     let fonction = document.createElement("p")

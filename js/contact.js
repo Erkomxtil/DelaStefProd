@@ -7,6 +7,14 @@ function contact () {
 }
 
 function affichagePageContact () {
+  /* Titre pour la partie mobile */
+  let headerTitle = document.getElementById("titreNavigation")
+  let titleH1 = document.createElement("h1")
+  headerTitle.innerHTML = ""
+  titleH1.textContent = "contact"
+  headerTitle.appendChild(titleH1)
+
+  /* Le contenu de la partie main */
   let main = document.getElementById("main")
   main.innerHTML = ""
   main.className = "contact"

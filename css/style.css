@@ -111,6 +111,10 @@ a {
           align-items: center;
 }
 
+#mainNav #titreNavigation {
+  display: none;
+}
+
 #mainNav .liens {
   position: relative;
   -webkit-box-flex: 4;
@@ -229,6 +233,17 @@ footer #socials p a {
   }
   #close:hover {
     cursor: pointer;
+  }
+  #mainNav .logo {
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  #mainNav #titreNavigation {
+    display: block;
+  }
+  #mainNav #titreNavigation h1 {
+    text-transform: uppercase;
   }
   #mainNav .liens {
     margin-right: 2%;
