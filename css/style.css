@@ -421,6 +421,17 @@ footer #socials p a {
   width: 100%;
 }
 
+#paragrapheInfos {
+  position: relative;
+}
+
+#closeInfos {
+  color: #046389;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
 body {
   font-family: 'Electrolize', sans-serif;
 }

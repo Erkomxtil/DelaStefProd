@@ -11,3 +11,13 @@
     }
   }
 }
+
+#paragrapheInfos {
+  position: relative;
+}
+#closeInfos {
+  color: $darkBlue;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
