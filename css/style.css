@@ -414,11 +414,22 @@ footer #socials p a {
 
 #main.realisations .realisationsBlock {
   width: 50%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 14px;
 }
 
 #main.realisations .realisationsBlock .imgLink {
   cursor: pointer;
-  width: 100%;
+  width: 80px;
+  height: 80px;
+  border: solid 3px #1C9CD9;
+  border-radius: 8px;
 }
 
 #paragrapheInfos {
@@ -426,10 +437,12 @@ footer #socials p a {
 }
 
 #closeInfos {
-  color: #046389;
+  color: #1C9CD9;
   position: absolute;
   top: 20px;
   right: 0;
+  font-size: 1.4em;
+  font-weight: bold;
 }
 
 body {

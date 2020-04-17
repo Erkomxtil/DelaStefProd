@@ -5,9 +5,16 @@
 
   .realisationsBlock{
     width: 50%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
     .imgLink {
       cursor: pointer;
-      width: 100%;
+      width: 80px;
+      height: 80px;
+      border: solid 3px $lightBlueTexte;
+      border-radius: 8px;
     }
   }
 }
@@ -16,8 +23,10 @@
   position: relative;
 }
 #closeInfos {
-  color: $darkBlue;
+  color: $lightBlueTexte;
   position: absolute;
   top: 20px;
   right: 0;
+  font-size: 1.4em;
+  font-weight: bold;
 }
