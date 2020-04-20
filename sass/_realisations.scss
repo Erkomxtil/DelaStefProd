@@ -2,32 +2,90 @@
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 160px;
+  justify-content: center;
 
   .realisationsBlock{
-    width: 50%;
-    height: 80px;
     display: flex;
-    justify-content: center;
     margin-top: 14px;
+
     .imgLink {
       cursor: pointer;
-      width: 80px;
-      height: 80px;
-      border: solid 3px $lightBlueTexte;
-      border-radius: 8px;
+      margin: 0 auto;
     }
   }
 }
 
-#paragrapheInfos {
+#wrapperInfos {
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    text-align: center;
+    line-height: 1.6em;
+
+    .boldinfos {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+
+    .entreprise {
+      text-transform: uppercase;
+    }
+  }
+
+  #closeInfos {
+    color: white;
+    position: absolute;
+    bottom: -60px;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #1C9CD9;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
 }
-#closeInfos {
-  color: $lightBlueTexte;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  font-size: 1.4em;
-  font-weight: bold;
+
+@media screen and (min-width: 435px){
+  #main.realisations {
+    justify-content: space-between;
+    .realisationsBlock {
+      .imgLink {
+        width: 66%;
+      }
+    }
+  } 
+}
+
+@media screen and (min-width: 870px){
+  #main.realisations {
+    justify-content: unset;
+
+    .realisationsBlock {
+      width: 25%;
+
+      .imgLink {
+        width: 50%;
+      }
+    }
+  } 
+}
+
+@media screen and (min-width: 1024px) {
+  #main.realisations {
+    height: calc(100vh - 80px);
+    align-items: center;
+  }
+
+  .wrapperInfos {
+    .imgLink {
+      height: 80px;
+    }
+  }
 }

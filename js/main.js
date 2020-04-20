@@ -9,10 +9,10 @@ function initialisation () {
   ajaxGet()
   navigation()
   mobileNavLink()
-  affichagePageAccueil()
   accueil()
   realisations()
   affichagePageRealisations()
+  affichagePageAccueil()
   contact()
 }
 

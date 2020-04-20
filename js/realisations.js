@@ -77,15 +77,20 @@ function affichagePageRealisations () {
           let description = realisationsInfos[numeroLogo].description
           let logo = realisationsInfos[numeroLogo].logo
     
-          let paragraphePhoto = document.createElement("p")
+          let wrapperInfos = document.createElement("div")
+          let photo = document.createElement("figure")
+          let paragrapheInfos = document.createElement("p")
           let closeInfos = document.createElement("span")
+          wrapperInfos.id = "wrapperInfos"
+          photo.innerHTML = '<img class="imgLink" src="'+ logo +'" alt="'+ entreprise + '">'
+          paragrapheInfos.innerHTML = date + '<br><span class="boldinfos">Entreprise : </span><br><span class="entreprise">' + entreprise + '</span><br><span class="boldinfos">Fonction : </span><br>' + fonction + '<br><span class="boldinfos">Environement : </span><br>' + environement + '<br><span class="boldinfos">Description : </span><br>' + description 
           closeInfos.id = "closeInfos"
           closeInfos.textContent = "X"
-          paragraphePhoto.id = "paragrapheInfos"
-          paragraphePhoto.innerHTML = '<img class="imgLink" src="'+ logo +'" alt="'+ entreprise + '"><br>'+ date + '<br>Entreprise : ' + entreprise + '<br>Fonction : ' + fonction + '<br>Environement : ' + environement + '<br>Description : ' + description
-    
-          paragraphePhoto.appendChild(closeInfos)
-          main.appendChild(paragraphePhoto)
+          
+          wrapperInfos.appendChild(photo)
+          wrapperInfos.appendChild(paragrapheInfos)
+          wrapperInfos.appendChild(closeInfos)
+          main.appendChild(wrapperInfos)
           
           closeInfos.addEventListener("click", (e) => {
             main.innerHTML = ""
