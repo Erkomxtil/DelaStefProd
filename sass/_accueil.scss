@@ -1,44 +1,44 @@
 #main.accueil {
-  height: calc(100vh - 160px);
   display: flex;
-  flex-direction: column;
+  height: calc(100vh - 160px);
   justify-content: center;
+  flex-direction: column;
 
   h1 {
     color: $darkBlueTexte;
-    font-size: 4em;
+    font-size: 2em;
   }
   .fonction {
     color: $lightBlueTexte;
-    font-size: 3em;
-    margin-bottom: 0.5em;
-  }
-  .linkedin {
-    margin-bottom: 0.5em;
-    a {
-      color: $darkBlueTexte;
-    }
+    font-size: 1.5em;
   }
   .texteAccueil {
-    margin-bottom: 0.5em;
+    font-size: 0.9em;
   }
 }
+#mobileNav li {
+  padding: 10px;
+}
 
-/* version mobile */ 
-@media screen and (max-width: 1024px) {
+
+/* version desktop */ 
+@media screen and (min-width: 1024px) {
   #main.accueil {
-    justify-content: unset;
     h1 {
-      font-size: 2em;
+      font-size: 4em;
     }
     .fonction {
-      font-size: 1.5em;
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    .linkedin {
+      margin-bottom: 0.5em;
+      a {
+        color: $darkBlueTexte;
+      }
     }
     .texteAccueil {
-      font-size: 0.9em;
+      margin-bottom: 0.5em;
     }
-  }
-  #mobileNav li {
-    padding: 10px;
   }
 }

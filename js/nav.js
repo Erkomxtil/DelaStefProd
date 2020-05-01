@@ -7,12 +7,19 @@ const navigation = () => {
   let openLink = document.querySelector(".liens")
   let closeLink = document.getElementById("close")
   let mobileNav = document.getElementById("modalLink")
+  let logoHome = document.querySelector(".logo")
+  let main = document.getElementById("main")
   
   openLink.addEventListener("click", () => {
     mobileNav.classList.add('isActive')
   })
   closeLink.addEventListener("click", () => {
     mobileNav.classList.remove("isActive")
+  })
+
+  logoHome.addEventListener("click", (e) => {
+    main.innerHTML = ""
+    affichagePageAccueil()
   })
 }
 

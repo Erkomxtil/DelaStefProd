@@ -1,0 +1,27 @@
+footer{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background: url("../images/fond-site.jpg") top left #0009f3;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  a{
+    color:white;
+  }
+  #contact{
+    border: 2px solid white;
+    padding: 2px;
+  }
+  #socials{
+    p{
+      display: flex;
+      align-items: center;
+      a{
+        padding-left: 4%;
+      }
+    }
+  }
+}

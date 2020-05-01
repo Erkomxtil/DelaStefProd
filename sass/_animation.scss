@@ -1,10 +1,29 @@
 .logo{
-  animation-duration: 1s;
-  animation-name: slideLogo;
+  animation: slideLogo 1s;
 }
 .liens{
-  animation-duration: 1s;
-  animation-name: slideLink
+  animation: slideLink 1s; 
+}
+
+.transition {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  background: blue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  figure {
+    cursor: pointer;
+  }
+
+  &.active {
+    top: -100%;
+    animation: start 2s ease-in;
+  }
 }
 
 @keyframes slideLogo {
@@ -28,5 +47,14 @@
   to {
     opacity: 1;
     margin-top: 0;
+  }
+}
+
+@keyframes start {
+  0% {
+    top: 0%
+  }
+  100% {
+    top: -100%;
   }
 }
