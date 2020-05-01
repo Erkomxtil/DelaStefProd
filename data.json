@@ -38,15 +38,18 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub",
       "description": "Création du mini site SFR pulse from scratch",
-      "logo": "/images/logo-entreprise/sfr-altice.png"
+      "logo": "/images/logo-entreprise/sfr.jpg",
+      "hover": "/images/logo-entreprise/sfr-hover.jpg"
+
     },
     {
       "date": "Septembre 2018 à février 2019",
-      "entreprise": "lvmh Fenty",
+      "entreprise": "Fenty",
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, JSon, SALES FORCE",
       "description": "Développement du site fenty.com pour la maison LVMH",
-      "logo": "/images/logo-entreprise/fenty.png"
+      "logo": "/images/logo-entreprise/fenty.jpg",
+      "hover": "/images/logo-entreprise/fenty-hover.jpg"
     },
     {
       "date": "Janvier 2017 à août 2018",
@@ -54,7 +57,9 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, SVN, CSS NEXT",
       "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive.",
-      "logo": "/images/logo-entreprise/pierre-et-vacances.png"
+      "logo": "/images/logo-entreprise/pierre-et-vacances.jpg",
+      "hover": "/images/logo-entreprise/pierre-et-vacances-hover.jpg"
+
     },
     {
       "date": "Novembre 2016 à décembre 2016",
@@ -62,7 +67,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS.",
-      "logo": "/images/logo-entreprise/weka.png"
+      "logo": "/images/logo-entreprise/weka.jpg",
+      "hover": "/images/logo-entreprise/weka-hover.jpg"
     },
     {
       "date": "Août 2016 à octobre 2016",
@@ -70,7 +76,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters",
-      "logo": "/images/logo-entreprise/maison-du-monde.png"
+      "logo": "/images/logo-entreprise/maison-du-monde.jpg",
+      "hover": "/images/logo-entreprise/maison-du-monde-hover.jpg"
     },
     {
       "date": "Janvier 2016 à juillet 2016",
@@ -78,7 +85,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, PHP",
       "description": "Refonte du site e-marketing et newsletters",
-      "logo": "/images/logo-entreprise/editialis.png"
+      "logo": "/images/logo-entreprise/editialis.jpg",
+      "hover": "/images/logo-entreprise/editialis-hover.jpg"
     },
     {
       "date": "Janvier 2015 à décembre 2015",
@@ -86,7 +94,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript",
       "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire",
-      "logo": "/images/logo-entreprise/newsmed.png"
+      "logo": "/images/logo-entreprise/newsmed.jpg",
+      "hover": "/images/logo-entreprise/newsmed-hover.jpg"
     },
     {
       "date": "Juin 2014 à novembre 2014",
@@ -94,7 +103,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript, PHP",
       "description": "Création de site complet via le CMS Wordpress",
-      "logo": "/images/logo-entreprise/websiting.png"
+      "logo": "/images/logo-entreprise/websiting.jpg",
+      "hover": "/images/logo-entreprise/websiting-hover.jpg"
     }
   ]
 }

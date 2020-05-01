@@ -1,8 +1,9 @@
-#main {
-  width: 1024px;
-  margin: 0 auto;
-  &.accueil, &.realisations {
-    overflow: hidden;
+header {
+  height: 80px;
+  #mainNav {
+    position: fixed;
+    background-color: rgba(0, 159, 227, 0.4);
+    z-index: 10;
   }
 }
 
@@ -10,6 +11,5 @@
   #main{
     width: 100%;
     margin: 0 auto;
-    padding: 0 4%;
   }
 }

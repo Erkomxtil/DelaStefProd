@@ -3,6 +3,9 @@
   height: calc(100vh - 160px);
   justify-content: center;
   flex-direction: column;
+  max-width: 1024px;
+  padding: 0 4rem;
+  margin: 0 auto;
 
   h1 {
     color: $darkBlueTexte;
@@ -24,6 +27,7 @@
 /* version desktop */ 
 @media screen and (min-width: 1024px) {
   #main.accueil {
+
     h1 {
       font-size: 4em;
     }

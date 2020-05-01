@@ -63,11 +63,15 @@ function affichagePageRealisations () {
         imagesBlock.src = realisationsInfos[i].logo
         imagesBlock.alt = realisationsInfos[i].entreprise
         imagesBlock.dataset.numeroLogo = i
-        imagesBlock.addEventListener("mouseover", (e) => {
+
+        wrapper.addEventListener("mouseenter", (e) => {
           imagesBlock.src = realisationsInfos[i].hover
+          imagesBlock.title = realisationsInfos[i].entreprise
         })
-        imagesBlock.addEventListener("mouseout", (e) => {
+        wrapper.addEventListener("mouseleave", (e) => {
+          wrapper.innerHTML = ""
           imagesBlock.src = realisationsInfos[i].logo
+          wrapper.appendChild(imagesBlock)
         })
               
         wrapper.appendChild(imagesBlock)
