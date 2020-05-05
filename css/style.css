@@ -57,6 +57,91 @@ a {
           box-sizing: border-box;
 }
 
+.transition {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 2.5s ease;
+  transition: all 2.5s ease;
+}
+
+.transition figure {
+  cursor: pointer;
+  z-index: 3;
+}
+
+.transition .moveUp {
+  height: 100vh;
+  width: 100%;
+  background: #99D9F4;
+  -webkit-clip-path: polygon(0% 0%, 0% 80%, 120% 0%, 0% 0%);
+          clip-path: polygon(0% 0%, 0% 80%, 120% 0%, 0% 0%);
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.transition .moveDown {
+  height: 100vh;
+  width: 100%;
+  background: #1F4A99;
+  -webkit-clip-path: polygon(120% 0%, 100% 0%, 100% 100%, -32% 100%);
+          clip-path: polygon(120% 0%, 100% 0%, 100% 100%, -32% 100%);
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.transition.active {
+  -webkit-animation: noVisible 2s;
+          animation: noVisible 2s;
+  z-index: 0;
+}
+
+.transition.active .moveUp {
+  height: 0;
+}
+
+.transition.active .moveDown {
+  height: 0;
+}
+
+.transition.active figure {
+  display: none;
+}
+
+@-webkit-keyframes noVisible {
+  form {
+    z-index: 100;
+  }
+  to {
+    z-index: 0;
+  }
+}
+
+@keyframes noVisible {
+  form {
+    z-index: 100;
+  }
+  to {
+    z-index: 0;
+  }
+}
+
 header {
   height: 80px;
 }
@@ -288,42 +373,13 @@ header #mainNav {
 }
 
 .logo {
-  -webkit-animation: slideLogo 1s;
-          animation: slideLogo 1s;
+  -webkit-animation: slideLogo 2s;
+          animation: slideLogo 2s;
 }
 
 .liens {
   -webkit-animation: slideLink 1s;
           animation: slideLink 1s;
-}
-
-.transition {
-  position: absolute;
-  z-index: 100;
-  top: 0%;
-  left: 0;
-  background: blue;
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.transition figure {
-  cursor: pointer;
-}
-
-.transition.active {
-  top: -100%;
-  -webkit-animation: start 2s ease-in;
-          animation: start 2s ease-in;
 }
 
 @-webkit-keyframes slideLogo {

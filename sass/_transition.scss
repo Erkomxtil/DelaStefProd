@@ -1,0 +1,61 @@
+.transition {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2.5s ease;
+
+  figure {
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .moveUp {
+    height: 100vh;
+    width: 100%;
+    background: #99D9F4;
+    clip-path: polygon(0% 0%, 0% 80%, 120% 0%, 0% 0%);
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
+
+  .moveDown {
+    height: 100vh;
+    width: 100%;
+    background: #1F4A99;
+    clip-path: polygon(120% 0%, 100% 0%, 100% 100%, -32% 100%);
+    position: absolute;
+    bottom: 0;
+    transition: all 1s ease;
+  }
+  &.active {
+    animation: noVisible 2s;
+    z-index: 0;
+    .moveUp {
+      height: 0;
+
+    }
+
+    .moveDown {
+      height: 0;
+    }
+
+    figure{
+      display: none;
+    }
+  }
+}
+
+@keyframes noVisible {
+  form {
+    z-index: 100;
+  } to {
+    z-index: 0;
+  }
+}
