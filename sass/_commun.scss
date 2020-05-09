@@ -1,8 +1,12 @@
+body {
+  background-color: #5FB7C2;
+}
+
 header {
   height: 80px;
   #mainNav {
     position: fixed;
-    background-color: rgba(0, 159, 227, 0.4);
+    background-color: rgba(0, 159, 227, 0.1);
     z-index: 10;
   }
 }
@@ -13,3 +17,24 @@ header {
     margin: 0 auto;
   }
 }
+
+@font-face {
+  font-family: kanit;
+  src: url(../font/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: Kanit;
+  src: url(../font/Kanit-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: kanit;
+  src: url(../font/Kanit-Light.ttf);
+  font-weight: lighter;
+}
+
+/* Permet de cacher la barre de défillement */
+::-webkit-scrollbar { 
+  width: 0px; 
+  background: transparent; 
+} 

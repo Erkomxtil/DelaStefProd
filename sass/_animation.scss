@@ -1,8 +1,9 @@
-.logo{
+.logo {
   animation: slideLogo 2s;
 }
-.liens{
-  animation: slideLink 1s; 
+
+.liens {
+  animation: slideLink 1s;
 }
 
 @keyframes slideLogo {
@@ -33,7 +34,32 @@
   0% {
     top: 0%
   }
+
   100% {
     top: -100%;
+  }
+}
+
+/* Animation de la roue */
+.roue {
+  display: none;
+}
+
+@media screen and (min-width: 1024px){
+  .roue {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    z-index: -1;
+    animation: roll 10s linear infinite;
+  }
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
   }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,6 +56,50 @@ a {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background-color: #5FB7C2;
+}
+
+header {
+  height: 80px;
+}
+
+header #mainNav {
+  position: fixed;
+  background-color: rgba(0, 159, 227, 0.1);
+  z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  #main {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@font-face {
+  font-family: kanit;
+  src: url(../font/Kanit-Regular.ttf);
+}
+
+@font-face {
+  font-family: Kanit;
+  src: url(../font/Kanit-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: kanit;
+  src: url(../font/Kanit-Light.ttf);
+  font-weight: lighter;
+}
+
+/* Permet de cacher la barre de défillement */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .transition {
@@ -139,23 +184,6 @@ a {
   }
   to {
     z-index: 0;
-  }
-}
-
-header {
-  height: 80px;
-}
-
-header #mainNav {
-  position: fixed;
-  background-color: rgba(0, 159, 227, 0.4);
-  z-index: 10;
-}
-
-@media screen and (max-width: 1024px) {
-  #main {
-    width: 100%;
-    margin: 0 auto;
   }
 }
 
@@ -256,13 +284,18 @@ header #mainNav {
           transform: translateX(-50%) scaleX(1);
 }
 
+#mainNav .liens ul li:nth-last-child(-n+2) a:hover::after {
+  display: none;
+}
+
 /* Mobiles */
 @media screen and (max-width: 1024px) {
   #modalLink {
     display: none;
+    z-index: 200;
   }
   #modalLink.isActive {
-    background: url("../images/fond-site.jpg") top left #0009f3;
+    background: #5FB7C2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -444,6 +477,45 @@ header #mainNav {
   }
 }
 
+/* Animation de la roue */
+.roue {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .roue {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    z-index: -1;
+    -webkit-animation: roll 10s linear infinite;
+            animation: roll 10s linear infinite;
+  }
+}
+
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes roll {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 #main.accueil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,6 +536,7 @@ header #mainNav {
 #main.accueil h1 {
   color: #1F4A99;
   font-size: 2em;
+  font-weight: bold;
 }
 
 #main.accueil .fonction {
@@ -473,6 +546,7 @@ header #mainNav {
 
 #main.accueil .texteAccueil {
   font-size: 0.9em;
+  color: white;
 }
 
 #mobileNav li {
@@ -524,6 +598,7 @@ header #mainNav {
           justify-content: center;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 #main.realisations .realisationsBlock .imgLink {
@@ -533,6 +608,7 @@ header #mainNav {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 1;
+  width: 100%;
 }
 
 #main.realisations .realisationsBlock .imgLink:hover {
@@ -618,9 +694,6 @@ header #mainNav {
   #main.realisations .realisationsBlock {
     width: 25%;
   }
-  #main.realisations .realisationsBlock .imgLink {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -675,6 +748,6 @@ footer #socials p a {
 }
 
 body {
-  font-family: 'Electrolize', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

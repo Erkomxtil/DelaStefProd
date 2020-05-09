@@ -4,17 +4,20 @@
   padding-bottom: 160px;
   justify-content: center;
 
-  .realisationsBlock{
+  .realisationsBlock {
     display: flex;
     justify-content: center;
     overflow: hidden;
     position: relative;
+    width: 100%;
 
     .imgLink {
       cursor: pointer;
       transform: scale(1);
       transition: all 1s ease;
       opacity: 1;
+      width: 100%;
+
       &:hover {
         transform: scale(1.5);
         opacity: 0.5;
@@ -74,27 +77,24 @@
   }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   #main.realisations {
     justify-content: space-between;
+
     .realisationsBlock {
       width: 50%;
     }
-  } 
+  }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
   #main.realisations {
     justify-content: unset;
 
     .realisationsBlock {
       width: 25%;
-
-      .imgLink {
-        width: 100%;
-      }
     }
-  } 
+  }
 }
 
 @media screen and (min-width: 1024px) {

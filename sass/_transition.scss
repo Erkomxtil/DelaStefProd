@@ -34,9 +34,11 @@
     bottom: 0;
     transition: all 1s ease;
   }
+
   &.active {
     animation: noVisible 2s;
     z-index: 0;
+
     .moveUp {
       height: 0;
 
@@ -46,7 +48,7 @@
       height: 0;
     }
 
-    figure{
+    figure {
       display: none;
     }
   }
@@ -55,7 +57,9 @@
 @keyframes noVisible {
   form {
     z-index: 100;
-  } to {
+  }
+
+  to {
     z-index: 0;
   }
 }

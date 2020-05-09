@@ -24,7 +24,7 @@ function affichagePageAccueil () {
     let headerTitle = document.getElementById("titreNavigation")
     let titleH1 = document.createElement("h1")
     headerTitle.innerHTML = ""
-    titleH1.textContent = "acceuil"
+    titleH1.textContent = "accueil"
     headerTitle.appendChild(titleH1)
 
     /* Le contenu de la partie main */

@@ -10,6 +10,7 @@
   h1 {
     color: $darkBlueTexte;
     font-size: 2em;
+    font-weight: bold;
   }
   .fonction {
     color: $lightBlueTexte;
@@ -17,6 +18,7 @@
   }
   .texteAccueil {
     font-size: 0.9em;
+    color: white;
   }
 }
 #mobileNav li {

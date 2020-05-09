@@ -56,14 +56,21 @@
             transition: transform 250ms;
           }
           
+          
           &:hover {
-            
             &::after {
               transform: translateX(-50%) scaleX(1);
             }
             
+          } 
+        }
+
+        &:nth-last-child(-n+2) a{
+          &:hover{
+            &::after {
+              display: none;
+            }
           }
-          
         }
       }
     }
@@ -74,8 +81,9 @@
 @media screen and (max-width: 1024px){
   #modalLink{
     display: none;
+    z-index: 200;
     &.isActive{
-      background: url("../images/fond-site.jpg") top left #0009f3;
+      background: #5FB7C2;
       display: flex;
       position: absolute;
       top: 0;
