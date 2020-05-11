@@ -58,10 +58,6 @@ a {
           box-sizing: border-box;
 }
 
-body {
-  background-color: #5FB7C2;
-}
-
 header {
   height: 80px;
 }
@@ -259,6 +255,15 @@ header #mainNav {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  background: transparent;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+#mainNav .liens ul li a.active {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.2rem;
 }
 
 #mainNav .liens ul li a::after {

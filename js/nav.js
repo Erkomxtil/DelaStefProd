@@ -23,8 +23,8 @@ const navigation = () => {
   })
 }
 
+/* Gestion des click sur la navigation mobile */
 const mobileNavLink = () => {
-  /* Gestion des click sur la navigation mobile */
   let liensMobile = document.querySelectorAll("#mobileNav li")
   for (let lien of liensMobile) {
     lien.addEventListener("click", (e) => {
@@ -35,7 +35,7 @@ const mobileNavLink = () => {
       main.innerHTML = ""
 
       /* J'affiche la page qui correspond au click du lien mobile */
-      switch ( classLink) {
+      switch ( classLink ) {
         case "accueil":
           affichagePageAccueil()
         break;
@@ -52,4 +52,38 @@ const mobileNavLink = () => {
   }
 }
 
-export { navigation, mobileNavLink }
+/* Liens en surbrillance pour indiquer la page actuelle */
+const currentLink = () => {
+  let selectedLink = document.querySelectorAll(".liens li a")
+  let accueilBtn = document.getElementById("accueil")
+  let realisationsBtn = document.getElementById("realisations")
+  let contactBtn = document.getElementById("contact")
+
+  /* Affichage pour la page d'accueil avec le bouton selectionner */
+  accueilBtn.className = "active"
+
+  for (let link of selectedLink) {     
+    link.addEventListener("click", (e) => {
+      accueilBtn.className = ""
+      realisationsBtn.className = ""
+      contactBtn.className = ""
+      let selectedBtn = e.currentTarget.id
+
+      switch (selectedBtn) {
+        case "accueil":
+          accueilBtn.className = "active"
+        break
+        case "realisations":
+          realisationsBtn.className = "active"
+        break
+        case "contact":
+          contactBtn.className = "active"
+        break
+        default:
+          accueilBtn.className = ""          
+      }
+    }) 
+  }
+}
+
+export { navigation, mobileNavLink, currentLink }

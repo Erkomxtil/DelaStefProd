@@ -1,6 +1,6 @@
 import { start } from './animation.js'
 import { ajaxGet } from './ajax.js'
-import { navigation, mobileNavLink } from './nav.js'
+import { navigation, mobileNavLink, currentLink } from './nav.js'
 import { accueil, affichagePageAccueil } from './accueil.js'
 import { realisations, affichagePageRealisations } from './realisations.js'
 import { contact } from './contact.js'
@@ -11,6 +11,7 @@ function initialisation () {
   ajaxGet()
   navigation()
   mobileNavLink()
+  currentLink()
   realisations()
   accueil()
   affichagePageRealisations()

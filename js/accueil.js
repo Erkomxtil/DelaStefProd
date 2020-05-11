@@ -12,6 +12,9 @@ function accueil () {
 
 /* Affichage de la page d'accueil */
 function affichagePageAccueil () {
+  /* Background de la page */
+  document.body.style.backgroundColor = "#5FB7C2"
+
   /* En local finalUrlSite va permettre d'avoir les données JSON à enlever par la suite et mettre la bonne url */
   let urlSite = document.location.href
   let newUrlSite = urlSite.split("1:")

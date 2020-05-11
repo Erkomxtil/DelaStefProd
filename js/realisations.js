@@ -1,24 +1,30 @@
-import { ajaxGet } from './ajax.js'
+import {
+  ajaxGet
+} from './ajax.js'
 
-function realisations () {
-  let cvLink = document.getElementById("realisations")
-  
-  cvLink.addEventListener("click", (e) => {
-    affichagePageRealisations () 
+function realisations() {
+  let realisationsBtn = document.getElementById("realisations")
+  let main = document.getElementById("main")
+
+  realisationsBtn.addEventListener("click", (e) => {
+    affichagePageRealisations()
   })
 }
 
-function affichagePageRealisations () {
+function affichagePageRealisations() {
+  /* Background de la page */
+  document.body.style.backgroundColor = "#E88516"
+
   /* En local finalUrlSite va permettre d'avoir les données JSON à enlever par la suite et mettre la bonne url */
   let urlSite = document.location.href
   let newUrlSite = urlSite.split("1:")
-  let finalUrlSite = newUrlSite[1].substr(0,5)
+  let finalUrlSite = newUrlSite[1].substr(0, 5)
 
-  ajaxGet("http://127.0.0.1:"+ finalUrlSite +"/data.json", (reponse) => {
+  ajaxGet("http://127.0.0.1:" + finalUrlSite + "/data.json", (reponse) => {
     let dataInfos = JSON.parse(reponse)
 
     /* Titre pour la partie mobile */
-    function titreMobile () {
+    function titreMobile() {
       let headerTitle = document.getElementById("titreNavigation")
       let titleH1 = document.createElement("h1")
       headerTitle.innerHTML = ""
@@ -34,17 +40,17 @@ function affichagePageRealisations () {
     main.className = "realisations"
 
     /* affichage des logos sur la page */
-    function blockImg () {
+    function blockImg() {
       let imagesBlock = document.createElement("img")
       let wrapper = document.createElement("div")
 
-      for (let i = 0; i < realisationsInfos.length ; i++){
+      for (let i = 0; i < realisationsInfos.length; i++) {
         wrapper.className = "realisationsBlock"
         imagesBlock.className = "imgLink"
         imagesBlock.src = realisationsInfos[i].logo
         imagesBlock.alt = realisationsInfos[i].entreprise
         imagesBlock.dataset.numeroLogo = i
-              
+
         wrapper.appendChild(imagesBlock)
         main.appendChild(wrapper)
       }
@@ -53,8 +59,8 @@ function affichagePageRealisations () {
     }
 
     /* affichage complet logo plus informations */
-    function infosBlock () {
-      for (let i = 0; i < realisationsInfos.length ; i++){
+    function infosBlock() {
+      for (let i = 0; i < realisationsInfos.length; i++) {
         let wrapper = document.createElement("div")
         let imagesBlock = document.createElement("img")
 
@@ -73,7 +79,7 @@ function affichagePageRealisations () {
           imagesBlock.src = realisationsInfos[i].logo
           wrapper.appendChild(imagesBlock)
         })
-              
+
         wrapper.appendChild(imagesBlock)
         main.appendChild(wrapper)
 
@@ -86,22 +92,22 @@ function affichagePageRealisations () {
           let environement = realisationsInfos[numeroLogo].environement
           let description = realisationsInfos[numeroLogo].description
           let logo = realisationsInfos[numeroLogo].logo
-    
+
           let wrapperInfos = document.createElement("div")
           let photo = document.createElement("figure")
           let paragrapheInfos = document.createElement("p")
           let closeInfos = document.createElement("span")
           wrapperInfos.id = "wrapperInfos"
-          photo.innerHTML = '<img class="imgLink" src="'+ logo +'" alt="'+ entreprise + '">'
-          paragrapheInfos.innerHTML = date + '<br><span class="boldinfos">Entreprise : </span><br><span class="entreprise">' + entreprise + '</span><br><span class="boldinfos">Fonction : </span><br>' + fonction + '<br><span class="boldinfos">Environement : </span><br>' + environement + '<br><span class="boldinfos">Description : </span><br>' + description 
+          photo.innerHTML = '<img class="imgLink" src="' + logo + '" alt="' + entreprise + '">'
+          paragrapheInfos.innerHTML = date + '<br><span class="boldinfos">Entreprise : </span><br><span class="entreprise">' + entreprise + '</span><br><span class="boldinfos">Fonction : </span><br>' + fonction + '<br><span class="boldinfos">Environement : </span><br>' + environement + '<br><span class="boldinfos">Description : </span><br>' + description
           closeInfos.id = "closeInfos"
           closeInfos.textContent = "X"
-          
+
           wrapperInfos.appendChild(photo)
           wrapperInfos.appendChild(paragrapheInfos)
           wrapperInfos.appendChild(closeInfos)
           main.appendChild(wrapperInfos)
-          
+
           closeInfos.addEventListener("click", (e) => {
             main.innerHTML = ""
             blockImg()
@@ -116,4 +122,7 @@ function affichagePageRealisations () {
   })
 }
 
-export { realisations, affichagePageRealisations }
+export {
+  realisations,
+  affichagePageRealisations
+}
