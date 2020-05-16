@@ -1,0 +1,40 @@
+#main.contact {
+  display: flex;
+  width: 50vw;
+  align-items: center;
+  height: calc(100vh - 80px);
+  justify-content: center;
+  color: white;
+
+  label {
+    text-transform: uppercase;
+  }
+
+  input, textarea {
+    width: 50vw;
+    margin: 1rem 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+
+    &::placeholder {
+      color: #7FC5CE;
+    }
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50vw;
+    border: none;
+    padding: 0.5rem;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #main.contact {
+    margin: 0 auto;
+  }
+}

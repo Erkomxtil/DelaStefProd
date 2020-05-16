@@ -38,7 +38,7 @@
         a {
           position: relative;
           padding: 1rem 0 0.5rem;
-          margin: 0 1.5rem;
+          margin: 0 1rem;
           color: white;
           text-decoration: none;
           text-transform: uppercase;
@@ -48,8 +48,6 @@
 
           &.active {
             background: rgba(0, 0, 0, 0.2);
-            padding: 0.2rem 0.5rem;
-            border-radius: 0.2rem;
           }
           
           &::after {
