@@ -103,9 +103,9 @@ function affichagePageRealisations() {
           closeInfos.id = "closeInfos"
           closeInfos.textContent = "X"
 
+          photo.appendChild(closeInfos)
           wrapperInfos.appendChild(photo)
           wrapperInfos.appendChild(paragrapheInfos)
-          wrapperInfos.appendChild(closeInfos)
           main.appendChild(wrapperInfos)
 
           closeInfos.addEventListener("click", (e) => {
@@ -122,7 +122,4 @@ function affichagePageRealisations() {
   })
 }
 
-export {
-  realisations,
-  affichagePageRealisations
-}
+export { realisations,affichagePageRealisations }

@@ -1,3 +1,5 @@
+import {  ajaxGet } from './ajax.js'
+
 function contact() {
   let contactLink = document.getElementById("contact")
 

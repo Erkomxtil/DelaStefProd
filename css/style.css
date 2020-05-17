@@ -248,6 +248,10 @@ header #mainNav {
           align-items: center;
 }
 
+#mainNav .liens ul li:nth-child(3) {
+  display: none;
+}
+
 #mainNav .liens ul li a {
   position: relative;
   padding: 1rem 0 0.5rem;
@@ -302,7 +306,11 @@ header #mainNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -317,16 +325,25 @@ header #mainNav {
   #modalLink.isActive li {
     text-align: center;
   }
+  #modalLink.isActive li:nth-child(3) {
+    display: none;
+  }
   #modalLink.isActive li a {
     color: white;
     text-transform: uppercase;
+  }
+  #modalLink.isActive .social {
+    list-style: none;
+  }
+  #modalLink.isActive .social li {
+    padding: 10px;
   }
   #close {
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 4.5%;
-    right: 1%;
+    top: 3.9%;
+    right: 0.6%;
   }
   #close::before {
     content: "";
@@ -586,7 +603,6 @@ header #mainNav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 160px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -646,11 +662,22 @@ header #mainNav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 100px;
+  padding: 0 5%;
+}
+
+#wrapperInfos figure {
+  position: relative;
+}
+
+#wrapperInfos figure .imgLink {
+  height: 200px;
 }
 
 #wrapperInfos p {
   text-align: center;
   line-height: 1.6em;
+  max-width: 500px;
 }
 
 #wrapperInfos p .boldinfos {
@@ -666,13 +693,15 @@ header #mainNav {
 #wrapperInfos #closeInfos {
   color: white;
   position: absolute;
-  bottom: -60px;
-  font-size: 21px;
+  top: 10px;
+  right: 2%;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   background-color: #1C9CD9;
   width: 20px;
   height: 20px;
+  border: 1px solid #1F4A99;
   border-radius: 20px;
   text-align: center;
 }

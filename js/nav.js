@@ -26,11 +26,13 @@ const navigation = () => {
 /* Gestion des click sur la navigation mobile */
 const mobileNavLink = () => {
   let liensMobile = document.querySelectorAll("#mobileNav li")
+
   for (let lien of liensMobile) {
     lien.addEventListener("click", (e) => {
       let classLink = e.target.textContent.toLowerCase()
       let modalClose = document.getElementById("modalLink")
       let main = document.getElementById("main")
+
       modalClose.classList.remove("isActive")
       main.innerHTML = ""
 
@@ -46,8 +48,9 @@ const mobileNavLink = () => {
           affichagePageContact()
         break;
         default: 
-          console.log("Erreur de click")
+          modalClose.classList.remove("isActive")          
       }
+
     })
   }
 }

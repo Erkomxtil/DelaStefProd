@@ -1,7 +1,6 @@
 #main.realisations {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 160px;
   justify-content: center;
 
   .realisationsBlock {
@@ -46,10 +45,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  padding: 0 5%;
+
+  figure {
+    position: relative;
+
+    .imgLink {
+      height: 200px;
+    }
+  }
 
   p {
     text-align: center;
     line-height: 1.6em;
+    max-width: 500px;
 
     .boldinfos {
       font-weight: bold;
@@ -65,13 +75,15 @@
   #closeInfos {
     color: white;
     position: absolute;
-    bottom: -60px;
-    font-size: 21px;
+    top: 10px;
+    right: 2%;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     background-color: #1C9CD9;
     width: 20px;
     height: 20px;
+    border: 1px solid $darkBlueTexte; 
     border-radius: 20px;
     text-align: center;
   }
