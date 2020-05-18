@@ -116,11 +116,20 @@ header #mainNav {
           align-items: center;
   -webkit-transition: all 2.5s ease;
   transition: all 2.5s ease;
+  text-align: center;
 }
 
 .transition figure {
   cursor: pointer;
   z-index: 3;
+  -webkit-animation: light 2s linear infinite;
+          animation: light 2s linear infinite;
+}
+
+.transition figure figcaption {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: white;
 }
 
 .transition .moveUp {
@@ -166,7 +175,7 @@ header #mainNav {
 }
 
 @-webkit-keyframes noVisible {
-  form {
+  from {
     z-index: 100;
   }
   to {
@@ -175,11 +184,57 @@ header #mainNav {
 }
 
 @keyframes noVisible {
-  form {
+  from {
     z-index: 100;
   }
   to {
     z-index: 0;
+  }
+}
+
+@-webkit-keyframes light {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes light {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -302,7 +357,9 @@ header #mainNav {
     z-index: 200;
   }
   #modalLink.isActive {
-    background: #5FB7C2;
+    background: url("/images/fond.svg") no-repeat center center, url("/images/fond-bas.svg") no-repeat center center;
+    background-color: #5FB7C2;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -675,6 +732,7 @@ header #mainNav {
 }
 
 #wrapperInfos p {
+  color: white;
   text-align: center;
   line-height: 1.6em;
   max-width: 500px;
@@ -694,7 +752,7 @@ header #mainNav {
   color: white;
   position: absolute;
   top: 10px;
-  right: 2%;
+  right: 4%;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -731,12 +789,26 @@ header #mainNav {
 @media screen and (min-width: 1024px) {
   #main.realisations {
     height: calc(100vh - 80px);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  .wrapperInfos .imgLink {
-    height: 80px;
+  #main.realisations #wrapperInfos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: auto;
+  }
+  #main.realisations #wrapperInfos .imgLink {
+    height: 200px;
+  }
+  #main.realisations #wrapperInfos p {
+    text-align: left;
+    margin-left: 20px;
   }
 }
 
@@ -840,5 +912,7 @@ footer #socials p a {
 
 body {
   font-family: 'Kanit', sans-serif;
+  background: url(/images/fond.svg) center top, url(/images/fond-bas.svg) no-repeat center 0px;
+  background-size: cover, cover;
 }
 /*# sourceMappingURL=style.css.map */

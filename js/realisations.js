@@ -13,7 +13,7 @@ function realisations() {
 
 function affichagePageRealisations() {
   /* Background de la page */
-  document.body.style.backgroundColor = "#E88516"
+  document.body.style.backgroundColor = "#1f4a99"
 
   /* En local finalUrlSite va permettre d'avoir les données JSON à enlever par la suite et mettre la bonne url */
   let urlSite = document.location.href
