@@ -24,6 +24,15 @@
   },
   "realisations": [
     {
+      "date": "Mai 2020",
+      "entreprise": "Projet personnel",
+      "fonction": "Développeur web",
+      "environement": "HTML / CSS, Javascript",
+      "description": "Intégration d'un page complète avec fonctionnalité en javascript, disponible sur mon gitHub",
+      "logo": "/images/logo-entreprise/art-et-metiers.jpg",
+      "hover": "/images/logo-entreprise/art-et-metiers-hover.jpg"
+    },
+    {
       "date": "Juin 2019 à ce jour",
       "entreprise": "icf habitat",
       "fonction": "Intégrateur web",

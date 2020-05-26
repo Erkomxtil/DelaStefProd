@@ -12,7 +12,7 @@ function ajaxGet(url, callback){
       callback(req.responseText)
     } else {
       // Affichage des informations sur l'échec du traitement de la requête
-      console.error(req.status + " " + req.statusText + " " + url)
+      console.warn(req.status + " " + req.statusText + " " + url)
     }
   })
   req.addEventListener("error", () => {
