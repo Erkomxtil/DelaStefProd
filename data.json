@@ -24,6 +24,15 @@
   },
   "realisations": [
     {
+      "date": "Juin 2020",
+      "entreprise": "Projet personnel",
+      "fonction": "Développeur web",
+      "environement": "HTML / CSS, Javascript",
+      "description": "Création d'un application de commande de burger, disponible sur mon gitHub \n https://erkomxtil.github.io/Wacdonald/",
+      "logo": "/images/logo-entreprise/wacdonald.jpg",
+      "hover": "/images/logo-entreprise/wacdonald-hover.jpg"
+    },
+    {
       "date": "Mai 2020",
       "entreprise": "Projet personnel",
       "fonction": "Développeur web",
