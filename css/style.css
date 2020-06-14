@@ -748,6 +748,10 @@ header #mainNav {
   text-transform: uppercase;
 }
 
+#wrapperInfos p a {
+  color: white;
+}
+
 #wrapperInfos #closeInfos {
   color: white;
   position: absolute;

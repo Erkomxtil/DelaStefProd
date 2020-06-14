@@ -28,9 +28,10 @@
       "entreprise": "Projet personnel",
       "fonction": "Développeur web",
       "environement": "HTML / CSS, Javascript",
-      "description": "Création d'un application de commande de burger, disponible sur mon gitHub \n https://erkomxtil.github.io/Wacdonald/",
+      "description": "Création d'un application de commande de burger, disponible sur mon gitHub",
       "logo": "/images/logo-entreprise/wacdonald.jpg",
-      "hover": "/images/logo-entreprise/wacdonald-hover.jpg"
+      "hover": "/images/logo-entreprise/wacdonald-hover.jpg",
+      "lien": "https://erkomxtil.github.io/Wacdonald/"
     },
     {
       "date": "Mai 2020",
@@ -39,7 +40,8 @@
       "environement": "HTML / CSS, Javascript",
       "description": "Intégration d'un page complète avec fonctionnalité en javascript, disponible sur mon gitHub",
       "logo": "/images/logo-entreprise/art-et-metiers.jpg",
-      "hover": "/images/logo-entreprise/art-et-metiers-hover.jpg"
+      "hover": "/images/logo-entreprise/art-et-metiers-hover.jpg",
+      "lien": "https://erkomxtil.github.io/Arts-et-Metiers/"
     },
     {
       "date": "Juin 2019 à ce jour",
@@ -48,7 +50,8 @@
       "environement": "HTML / CSS, Java, IKOS",
       "description": "Création de courrier via le CMS IKOS",
       "logo": "/images/logo-entreprise/sncf.jpg",
-      "hover": "/images/logo-entreprise/sncf-hover.jpg"
+      "hover": "/images/logo-entreprise/sncf-hover.jpg",
+      "lien": ""
     },
     {
       "date": "Mars 2019 à Juin 2019",
@@ -57,8 +60,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub",
       "description": "Création du mini site SFR pulse from scratch",
       "logo": "/images/logo-entreprise/sfr.jpg",
-      "hover": "/images/logo-entreprise/sfr-hover.jpg"
-
+      "hover": "/images/logo-entreprise/sfr-hover.jpg",
+      "lien": ""
     },
     {
       "date": "Septembre 2018 à février 2019",
@@ -67,7 +70,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, JSon, SALES FORCE",
       "description": "Développement du site fenty.com pour la maison LVMH",
       "logo": "/images/logo-entreprise/fenty.jpg",
-      "hover": "/images/logo-entreprise/fenty-hover.jpg"
+      "hover": "/images/logo-entreprise/fenty-hover.jpg",
+      "lien": "https://www.fenty.com/fr/fr/"
     },
     {
       "date": "Janvier 2017 à août 2018",
@@ -76,7 +80,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, SVN, CSS NEXT",
       "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive.",
       "logo": "/images/logo-entreprise/pierre-et-vacances.jpg",
-      "hover": "/images/logo-entreprise/pierre-et-vacances-hover.jpg"
+      "hover": "/images/logo-entreprise/pierre-et-vacances-hover.jpg",
+      "lien": "https://www.centerparcs.fr/"
 
     },
     {
@@ -86,7 +91,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS.",
       "logo": "/images/logo-entreprise/weka.jpg",
-      "hover": "/images/logo-entreprise/weka-hover.jpg"
+      "hover": "/images/logo-entreprise/weka-hover.jpg",
+      "lien": ""
     },
     {
       "date": "Août 2016 à octobre 2016",
@@ -95,7 +101,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters",
       "logo": "/images/logo-entreprise/maison-du-monde.jpg",
-      "hover": "/images/logo-entreprise/maison-du-monde-hover.jpg"
+      "hover": "/images/logo-entreprise/maison-du-monde-hover.jpg",
+      "lien": ""
     },
     {
       "date": "Janvier 2016 à juillet 2016",
@@ -104,7 +111,8 @@
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, PHP",
       "description": "Refonte du site e-marketing et newsletters",
       "logo": "/images/logo-entreprise/editialis.jpg",
-      "hover": "/images/logo-entreprise/editialis-hover.jpg"
+      "hover": "/images/logo-entreprise/editialis-hover.jpg",
+      "lien": "https://www.e-marketing.fr/"
     },
     {
       "date": "Janvier 2015 à décembre 2015",
@@ -113,7 +121,8 @@
       "environement": "HTML5 / CSS3, Javascript",
       "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire",
       "logo": "/images/logo-entreprise/newsmed.jpg",
-      "hover": "/images/logo-entreprise/newsmed-hover.jpg"
+      "hover": "/images/logo-entreprise/newsmed-hover.jpg",
+      "lien": "https://www.lemoniteurdespharmacies.fr/"
     },
     {
       "date": "Juin 2014 à novembre 2014",
@@ -122,7 +131,8 @@
       "environement": "HTML5 / CSS3, Javascript, PHP",
       "description": "Création de site complet via le CMS Wordpress",
       "logo": "/images/logo-entreprise/websiting.jpg",
-      "hover": "/images/logo-entreprise/websiting-hover.jpg"
+      "hover": "/images/logo-entreprise/websiting-hover.jpg",
+      "lien": ""
     }
   ]
 }

@@ -92,6 +92,12 @@ function affichagePageRealisations() {
           let environement = realisationsInfos[numeroLogo].environement
           let description = realisationsInfos[numeroLogo].description
           let logo = realisationsInfos[numeroLogo].logo
+          let lien = realisationsInfos[numeroLogo].lien
+          let lienFinal = ""
+
+          if(lien !== ""){
+            lienFinal = '<br><span class="boldinfos">Lien : </span><br>' + '<a href="' + lien + '" target="_blank">' + lien + '</a>'
+          }
 
           let wrapperInfos = document.createElement("div")
           let photo = document.createElement("figure")
@@ -99,7 +105,7 @@ function affichagePageRealisations() {
           let closeInfos = document.createElement("span")
           wrapperInfos.id = "wrapperInfos"
           photo.innerHTML = '<img class="imgLink" src="' + logo + '" alt="' + entreprise + '">'
-          paragrapheInfos.innerHTML = date + '<br><span class="boldinfos">Entreprise : </span><br><span class="entreprise">' + entreprise + '</span><br><span class="boldinfos">Fonction : </span><br>' + fonction + '<br><span class="boldinfos">Environement : </span><br>' + environement + '<br><span class="boldinfos">Description : </span><br>' + description
+          paragrapheInfos.innerHTML = date + '<br><span class="boldinfos">Entreprise : </span><br><span class="entreprise">' + entreprise + '</span><br><span class="boldinfos">Fonction : </span><br>' + fonction + '<br><span class="boldinfos">Environement : </span><br>' + environement + '<br><span class="boldinfos">Description : </span><br>' + description + lienFinal
           closeInfos.id = "closeInfos"
           closeInfos.textContent = "X"
 
