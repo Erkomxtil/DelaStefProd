@@ -15,7 +15,6 @@
       },
       {
         "paragraphe": "Je recherche un environnement dans lequel il fait bon vivre, travailler, où le bon sens est la règle d'or et le code de qualité prime sur les développements faits à la va-vite. Donc si vous êtes intéressé par une personne qui aime s'invertir et donner le meilleur de soi-même, vous êtes à la bonne adresse."
-
       },
       {
         "paragraphe": "Je vous invite à me contacter soit pour une proposition de travail, soit pour me faire une remarque pertinente sur mon site ou tout simplement pour dire bonjour. Bonne visite."
@@ -23,6 +22,26 @@
     ]
   },
   "realisations": [
+    {
+      "date": "Septembre 2020 à Janvier 2021",
+      "entreprise": "Igraal",
+      "fonction": "Développeur web",
+      "environement": "HTML / CSS, Javascript, Symfony, twig, git, gitLab, PHP",
+      "description": "Refonte d'une partie du site de Radins.com",
+      "logo": "/images/logo-entreprise/radins.jpg",
+      "hover": "/images/logo-entreprise/radins-hover.jpg",
+      "lien": "https://www.radins.com/"
+    },
+    {
+      "date": "Juin 2020",
+      "entreprise": "Projet personnel",
+      "fonction": "Développeur web",
+      "environement": "HTML / CSS, Javascript, VueJs cdn",
+      "description": "Création d'une application pour le marathon des films Marvel, disponible sur mon gitHub",
+      "logo": "/images/logo-entreprise/marathon-Marvel.jpg",
+      "hover": "/images/logo-entreprise/marathon-Marvel-hover.jpg",
+      "lien": "https://erkomxtil.github.io/marathon-Marvel/"
+    },
     {
       "date": "Juin 2020",
       "entreprise": "Projet personnel",
@@ -44,7 +63,7 @@
       "lien": "https://erkomxtil.github.io/Arts-et-Metiers/"
     },
     {
-      "date": "Juin 2019 à ce jour",
+      "date": "Juin 2019 à mai 2020",
       "entreprise": "icf habitat",
       "fonction": "Intégrateur web",
       "environement": "HTML / CSS, Java, IKOS",
@@ -82,7 +101,6 @@
       "logo": "/images/logo-entreprise/pierre-et-vacances.jpg",
       "hover": "/images/logo-entreprise/pierre-et-vacances-hover.jpg",
       "lien": "https://www.centerparcs.fr/"
-
     },
     {
       "date": "Novembre 2016 à décembre 2016",
