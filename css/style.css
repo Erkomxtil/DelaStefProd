@@ -760,7 +760,7 @@ header #mainNav {
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #1C9CD9;
+  background-color: #1c9cd9;
   width: 20px;
   height: 20px;
   border: 1px solid #1F4A99;
@@ -784,9 +784,61 @@ header #mainNav {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    /* Animation de la flèche pour le scroll */
   }
   #main.realisations .realisationsBlock {
     width: 25%;
+  }
+  #main.realisations .arrowBlock {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    width: 40px;
+  }
+  #main.realisations .arrowBlock::before {
+    content: "";
+    border-color: #1F4A99;
+    border-style: solid;
+    border-width: 4px 4px 0 0;
+    display: inline-block;
+    height: 30px;
+    left: 0px;
+    position: relative;
+    top: -20px;
+    vertical-align: top;
+    width: 30px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    -webkit-animation: arrowMove 1s infinite ease-in-out;
+            animation: arrowMove 1s infinite ease-in-out;
+  }
+  @-webkit-keyframes arrowMove {
+    0% {
+      top: -4px;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: -4px;
+    }
+  }
+  @keyframes arrowMove {
+    0% {
+      top: -4px;
+    }
+    50% {
+      top: -20px;
+    }
+    100% {
+      top: -4px;
+    }
   }
 }
 

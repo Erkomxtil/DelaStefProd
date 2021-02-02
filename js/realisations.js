@@ -95,7 +95,7 @@ function affichagePageRealisations() {
           let lien = realisationsInfos[numeroLogo].lien
           let lienFinal = ""
 
-          if(lien !== ""){
+          if (lien !== "") {
             lienFinal = '<br><span class="boldinfos">Lien : </span><br>' + '<a href="' + lien + '" target="_blank">' + lien + '</a>'
           }
 
@@ -122,10 +122,36 @@ function affichagePageRealisations() {
       }
     }
 
+    /* Affichage animation flèche pour la suite des réalisations */
+    function arrowGoDown() {
+      const arrowBlock = document.createElement('div')
+      arrowBlock.className = "arrowBlock"
+      main.append(arrowBlock)
+    }
+
+    /* Enlève la flèche du bas au scroll de l'utilisateur */
+    function flecheOut() {
+      var scrollUser = document.documentElement.scrollTop
+      var flecheDown = document.querySelector(".arrowBlock")
+
+      if (scrollUser > 0) {
+        flecheDown.style.display = "none"
+      } else {
+        flecheDown.style.display = "block"
+      }
+    }
+
+    window.onscroll = flecheOut
+
     titreMobile()
 
     infosBlock()
+
+    arrowGoDown()
   })
 }
 
-export { realisations,affichagePageRealisations }
+export {
+  realisations,
+  affichagePageRealisations
+}
