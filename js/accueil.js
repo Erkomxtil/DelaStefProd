@@ -14,13 +14,8 @@ function accueil () {
 function affichagePageAccueil () {
   /* Background de la page */
   document.body.style.backgroundColor = "#5FB7C2"
-
-  /* En local finalUrlSite va permettre d'avoir les données JSON à enlever par la suite et mettre la bonne url */
-  let urlSite = document.location.href
-  let newUrlSite = urlSite.split("1:")
-  let finalUrlSite = newUrlSite[1].substr(0,5)
   
-  ajaxGet("http://127.0.0.1:"+ finalUrlSite +"/data.json", (reponse) => {
+  ajaxGet("https://delastef.netlify.app/data.json", (reponse) => {
     let dataInfos = JSON.parse(reponse)
     
     /* Titre pour la partie mobile */

@@ -1,7 +1,7 @@
 /*----- Pour une requête asynchrone -------- */
 //Exécute un appel AJAX GET
 // Prend en paramètre l'URL cible et la fonction callback appelé en cas de succès
-function ajaxGet(url, callback) {
+function ajaxGet(url, callback){
   let req = new XMLHttpRequest()
   // La requête est asynchrone lorsque le 3ème paramètre vaut true ou est absent 
   req.open("GET", url)
@@ -12,16 +12,14 @@ function ajaxGet(url, callback) {
       callback(req.responseText)
     } else {
       // Affichage des informations sur l'échec du traitement de la requête
-      console.warn(req.status + " " + req.statusText + " " + url)
+      console.error('Erreur sur le traitement de la requête')
     }
   })
   req.addEventListener("error", () => {
     // La requête n'a pas réussi à atteindre le serveur
-    console.error("Erreur réseau avec l'URL " + url)
+    console.error("Erreur réseau avec l'URL " + url )
   })
   req.send(null)
 }
 
-export {
-  ajaxGet
-}
+export { ajaxGet }

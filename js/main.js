@@ -8,7 +8,6 @@ import { contact } from './contact.js'
 /* Initaliser toutes les fonctions */
 function initialisation () {
   start()
-  ajaxGet()
   navigation()
   mobileNavLink()
   currentLink()

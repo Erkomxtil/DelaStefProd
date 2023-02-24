@@ -3,7 +3,7 @@
     "title": {
       "nom": "Chaffre",
       "prenom": "Stéphane",
-      "fonction": "Intégrateur web / Infographiste",
+      "fonction": "Développeur front-end / Intégrateur web / Infographiste",
       "linkedInUrl": {
         "texte": "Découvrez mon profil linkedin",
         "lien": "https://www.linkedin.com/in/stephane-chaffre/"
@@ -14,7 +14,7 @@
         "paragraphe": "Mon site CV a pour but de trouver l'employeur de mes rêves, car il n'est pas interdit de rêver. En effet après 5 ans passés dans le secteur du web, il me reste encore beaucoup de découverte et d'apprentissage car les techniques ainsi que les méthodes de travail changent."
       },
       {
-        "paragraphe": "Je recherche un environnement dans lequel il fait bon vivre, travailler, où le bon sens est la règle d'or et le code de qualité prime sur les développements faits à la va-vite. Donc si vous êtes intéressé par une personne qui aime s'invertir et donner le meilleur de soi-même, vous êtes à la bonne adresse."
+        "paragraphe": "Je recherche un environnement dans lequel il fait bon vivre, travailler, où le bon sens est la règle d'or et le code de qualité prime sur les développements faits à la va-vite. Donc si vous êtes intéressé par une personne qui aime s'investir et donner le meilleur de soi-même, vous êtes à la bonne adresse."
       },
       {
         "paragraphe": "Je vous invite à me contacter soit pour une proposition de travail, soit pour me faire une remarque pertinente sur mon site ou tout simplement pour dire bonjour. Bonne visite."
@@ -23,9 +23,49 @@
   },
   "realisations": [
     {
-      "date": "Septembre 2020 à Janvier 2021",
+      "date": "Janvier 2023 à ce jour",
+      "entreprise": "OpenClassrooms",
+      "fonction": "Développeur d'application Javascript / React",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React",
+      "description": "Formation de développeur d'application Javascript / React",
+      "logo": "/images/logo-entreprise/openclassrooms.jpg",
+      "hover": "/images/logo-entreprise/openclassrooms-hover.jpg",
+      "lien": "https://openclassrooms.com/fr/"
+    },
+    {
+      "date": "Juin 2021 à Septembre 2022",
+      "entreprise": "Syneos Health",
+      "fonction": "Développeur front-end",
+      "environement": "HTML / CSS, Javascript, git, gitLab, Marketo, Veeva, SASS",
+      "description": "Création de landing page et d'email, mise à jour de site web pour le client GE Healthcare",
+      "logo": "/images/logo-entreprise/syneos-health.jpg",
+      "hover": "/images/logo-entreprise/syneos-health-hover.jpg",
+      "lien": "https://ca.syneoshealth.com/"
+    },
+    {
+      "date": "Juillet 2022",
+      "entreprise": "Projet personnel",
+      "fonction": "Développeur front-end",
+      "environement": "HTML / CSS, Javascript, VueJs, SASS",
+      "description": "Exemple d'intégration d'une page avec quelques fonctionnalité javascript, header et le panier",
+      "logo": "./images/logo-entreprise/the-kooples.jpg",
+      "hover": "./images/logo-entreprise/the-kooples-hover.jpg",
+      "lien": "https://faume.netlify.app/"
+    },
+    {
+      "date": "Juin 2021",
+      "entreprise": "Projet personnel",
+      "fonction": "Développeur front-end",
+      "environement": "HTML / CSS, Javascript, ReactJs, SASS",
+      "description": "Site pour la certification Débutez avec ReactJs sur openclassrooms",
+      "logo": "./images/logo-entreprise/la-maison-jungle.jpg",
+      "hover": "./images/logo-entreprise/la-maison-jungle-hover.jpg",
+      "lien": "https://la-maison-des-plantes.netlify.app/"
+    },
+    {
+      "date": "Septembre 2020 à Février 2021",
       "entreprise": "Igraal",
-      "fonction": "Développeur web",
+      "fonction": "Développeur front-end",
       "environement": "HTML / CSS, Javascript, Symfony, twig, git, gitLab, PHP",
       "description": "Refonte d'une partie du site de Radins.com",
       "logo": "/images/logo-entreprise/radins.jpg",
@@ -38,9 +78,9 @@
       "fonction": "Développeur web",
       "environement": "HTML / CSS, Javascript, VueJs cdn",
       "description": "Création d'une application pour le marathon des films Marvel, disponible sur mon gitHub",
-      "logo": "/images/logo-entreprise/marathon-Marvel.jpg",
-      "hover": "/images/logo-entreprise/marathon-Marvel-hover.jpg",
-      "lien": "https://erkomxtil.github.io/marathon-Marvel/"
+      "logo": "./images/logo-entreprise/marathon-Marvel.jpg",
+      "hover": "./images/logo-entreprise/marathon-Marvel-hover.jpg",
+      "lien": "https://marathon-marvel.netlify.app/"
     },
     {
       "date": "Juin 2020",
@@ -48,8 +88,8 @@
       "fonction": "Développeur web",
       "environement": "HTML / CSS, Javascript",
       "description": "Création d'un application de commande de burger, disponible sur mon gitHub",
-      "logo": "/images/logo-entreprise/wacdonald.jpg",
-      "hover": "/images/logo-entreprise/wacdonald-hover.jpg",
+      "logo": "./images/logo-entreprise/wacdonald.jpg",
+      "hover": "./images/logo-entreprise/wacdonald-hover.jpg",
       "lien": "https://erkomxtil.github.io/Wacdonald/"
     },
     {
@@ -58,8 +98,8 @@
       "fonction": "Développeur web",
       "environement": "HTML / CSS, Javascript",
       "description": "Intégration d'un page complète avec fonctionnalité en javascript, disponible sur mon gitHub",
-      "logo": "/images/logo-entreprise/art-et-metiers.jpg",
-      "hover": "/images/logo-entreprise/art-et-metiers-hover.jpg",
+      "logo": "./images/logo-entreprise/art-et-metiers.jpg",
+      "hover": "./images/logo-entreprise/art-et-metiers-hover.jpg",
       "lien": "https://erkomxtil.github.io/Arts-et-Metiers/"
     },
     {
@@ -68,8 +108,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML / CSS, Java, IKOS",
       "description": "Création de courrier via le CMS IKOS",
-      "logo": "/images/logo-entreprise/sncf.jpg",
-      "hover": "/images/logo-entreprise/sncf-hover.jpg",
+      "logo": "./images/logo-entreprise/sncf.jpg",
+      "hover": "./images/logo-entreprise/sncf-hover.jpg",
       "lien": ""
     },
     {
@@ -78,8 +118,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub",
       "description": "Création du mini site SFR pulse from scratch",
-      "logo": "/images/logo-entreprise/sfr.jpg",
-      "hover": "/images/logo-entreprise/sfr-hover.jpg",
+      "logo": "./images/logo-entreprise/sfr.jpg",
+      "hover": "./images/logo-entreprise/sfr-hover.jpg",
       "lien": ""
     },
     {
@@ -88,8 +128,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, JSon, SALES FORCE",
       "description": "Développement du site fenty.com pour la maison LVMH",
-      "logo": "/images/logo-entreprise/fenty.jpg",
-      "hover": "/images/logo-entreprise/fenty-hover.jpg",
+      "logo": "./images/logo-entreprise/fenty.jpg",
+      "hover": "./images/logo-entreprise/fenty-hover.jpg",
       "lien": "https://www.fenty.com/fr/fr/"
     },
     {
@@ -98,8 +138,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, GitHub, SVN, CSS NEXT",
       "description": "Refonte du site Center Parcs , correction de bug sur le site Pierre et vacances , intégration des pages selon les maquettes en responsive.",
-      "logo": "/images/logo-entreprise/pierre-et-vacances.jpg",
-      "hover": "/images/logo-entreprise/pierre-et-vacances-hover.jpg",
+      "logo": "./images/logo-entreprise/pierre-et-vacances.jpg",
+      "hover": "./images/logo-entreprise/pierre-et-vacances-hover.jpg",
       "lien": "https://www.centerparcs.fr/"
     },
     {
@@ -108,8 +148,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Découpage et intégration de pages selon les maquettes pour un site de réseau professionnel pour les fonctionnaires. Gestion et mise en place de l’ensemble des fichiers SASS.",
-      "logo": "/images/logo-entreprise/weka.jpg",
-      "hover": "/images/logo-entreprise/weka-hover.jpg",
+      "logo": "./images/logo-entreprise/weka.jpg",
+      "hover": "./images/logo-entreprise/weka-hover.jpg",
       "lien": ""
     },
     {
@@ -118,8 +158,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, Symfony, Git, PHP",
       "description": "Modification et mise à jour de pages déjà en production, plus intégration des newsletters",
-      "logo": "/images/logo-entreprise/maison-du-monde.jpg",
-      "hover": "/images/logo-entreprise/maison-du-monde-hover.jpg",
+      "logo": "./images/logo-entreprise/maison-du-monde.jpg",
+      "hover": "./images/logo-entreprise/maison-du-monde-hover.jpg",
       "lien": ""
     },
     {
@@ -128,8 +168,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, SASS, Javascript, JQuery, PHP",
       "description": "Refonte du site e-marketing et newsletters",
-      "logo": "/images/logo-entreprise/editialis.jpg",
-      "hover": "/images/logo-entreprise/editialis-hover.jpg",
+      "logo": "./images/logo-entreprise/editialis.jpg",
+      "hover": "./images/logo-entreprise/editialis-hover.jpg",
       "lien": "https://www.e-marketing.fr/"
     },
     {
@@ -138,8 +178,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript",
       "description": "Refonte des sites les moniteur des pharmacies et le point vétérinaire",
-      "logo": "/images/logo-entreprise/newsmed.jpg",
-      "hover": "/images/logo-entreprise/newsmed-hover.jpg",
+      "logo": "./images/logo-entreprise/newsmed.jpg",
+      "hover": "./images/logo-entreprise/newsmed-hover.jpg",
       "lien": "https://www.lemoniteurdespharmacies.fr/"
     },
     {
@@ -148,8 +188,8 @@
       "fonction": "Intégrateur web",
       "environement": "HTML5 / CSS3, Javascript, PHP",
       "description": "Création de site complet via le CMS Wordpress",
-      "logo": "/images/logo-entreprise/websiting.jpg",
-      "hover": "/images/logo-entreprise/websiting-hover.jpg",
+      "logo": "./images/logo-entreprise/websiting.jpg",
+      "hover": "./images/logo-entreprise/websiting-hover.jpg",
       "lien": ""
     }
   ]

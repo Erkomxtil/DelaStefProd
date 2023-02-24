@@ -1,6 +1,12 @@
-import { affichagePageAccueil } from './accueil.js'
-import { affichagePageRealisations } from './realisations.js'
-import { affichagePageContact } from './contact.js'
+import {
+  affichagePageAccueil
+} from './accueil.js'
+import {
+  affichagePageRealisations
+} from './realisations.js'
+import {
+  affichagePageContact
+} from './contact.js'
 
 /* Pour la navigation du site le menu haut */
 const navigation = () => {
@@ -9,7 +15,7 @@ const navigation = () => {
   let mobileNav = document.getElementById("modalLink")
   let logoHome = document.querySelector(".logo")
   let main = document.getElementById("main")
-  
+
   openLink.addEventListener("click", () => {
     mobileNav.classList.add('isActive')
   })
@@ -37,18 +43,18 @@ const mobileNavLink = () => {
       main.innerHTML = ""
 
       /* J'affiche la page qui correspond au click du lien mobile */
-      switch ( classLink ) {
+      switch (classLink) {
         case "accueil":
           affichagePageAccueil()
-        break;
+          break;
         case "réalisations":
           affichagePageRealisations()
-        break;
+          break;
         case "contact":
           affichagePageContact()
-        break;
-        default: 
-          modalClose.classList.remove("isActive")          
+          break;
+        default:
+          modalClose.classList.remove("isActive")
       }
 
     })
@@ -61,11 +67,12 @@ const currentLink = () => {
   let accueilBtn = document.getElementById("accueil")
   let realisationsBtn = document.getElementById("realisations")
   let contactBtn = document.getElementById("contact")
+  let logoHome = document.querySelector(".logo")
 
   /* Affichage pour la page d'accueil avec le bouton selectionner */
   accueilBtn.className = "active"
 
-  for (let link of selectedLink) {     
+  for (let link of selectedLink) {
     link.addEventListener("click", (e) => {
       accueilBtn.className = ""
       realisationsBtn.className = ""
@@ -75,18 +82,28 @@ const currentLink = () => {
       switch (selectedBtn) {
         case "accueil":
           accueilBtn.className = "active"
-        break
+          break
         case "realisations":
           realisationsBtn.className = "active"
-        break
+          break
         case "contact":
           contactBtn.className = "active"
-        break
+          break
         default:
-          accueilBtn.className = ""          
+          accueilBtn.className = ""
       }
-    }) 
+    })
   }
+
+  /* Affichage quand on click sur le logo */
+  logoHome.addEventListener("click", () => {
+    accueilBtn.className = "active"
+    realisationsBtn.classList.remove("active")
+  })
 }
 
-export { navigation, mobileNavLink, currentLink }
+export {
+  navigation,
+  mobileNavLink,
+  currentLink
+}
