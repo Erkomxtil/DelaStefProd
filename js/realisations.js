@@ -134,7 +134,7 @@ function affichagePageRealisations() {
       var scrollUser = document.documentElement.scrollTop
       var flecheDown = document.querySelector(".arrowBlock")
 
-      if (scrollUser > 0) {
+      if (scrollUser > 0 && flecheDown !== null) {
         flecheDown.style.display = "none"
       } else {
         flecheDown.style.display = "block"
