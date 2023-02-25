@@ -14,8 +14,11 @@ function accueil () {
 function affichagePageAccueil () {
   /* Background de la page */
   document.body.style.backgroundColor = "#5FB7C2"
+
+  const url = new URL(document.location.href)
+  const ajaxUrl = url.origin + "DelaStefProd/data.json"
   
-  ajaxGet("https://delastef.netlify.app/data.json", (reponse) => {
+  ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse)
     
     /* Titre pour la partie mobile */
