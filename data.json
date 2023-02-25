@@ -28,8 +28,8 @@
       "fonction": "Développeur d'application Javascript / React",
       "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React",
       "description": "Formation de développeur d'application Javascript / React",
-      "logo": "/images/logo-entreprise/openclassrooms.jpg",
-      "hover": "/images/logo-entreprise/openclassrooms-hover.jpg",
+      "logo": "./images/logo-entreprise/openclassrooms.jpg",
+      "hover": "./images/logo-entreprise/openclassrooms-hover.jpg",
       "lien": "https://openclassrooms.com/fr/"
     },
     {
@@ -38,8 +38,8 @@
       "fonction": "Développeur front-end",
       "environement": "HTML / CSS, Javascript, git, gitLab, Marketo, Veeva, SASS",
       "description": "Création de landing page et d'email, mise à jour de site web pour le client GE Healthcare",
-      "logo": "/images/logo-entreprise/syneos-health.jpg",
-      "hover": "/images/logo-entreprise/syneos-health-hover.jpg",
+      "logo": "./images/logo-entreprise/syneos-health.jpg",
+      "hover": "./images/logo-entreprise/syneos-health-hover.jpg",
       "lien": "https://ca.syneoshealth.com/"
     },
     {
@@ -68,8 +68,8 @@
       "fonction": "Développeur front-end",
       "environement": "HTML / CSS, Javascript, Symfony, twig, git, gitLab, PHP",
       "description": "Refonte d'une partie du site de Radins.com",
-      "logo": "/images/logo-entreprise/radins.jpg",
-      "hover": "/images/logo-entreprise/radins-hover.jpg",
+      "logo": "./images/logo-entreprise/radins.jpg",
+      "hover": "./images/logo-entreprise/radins-hover.jpg",
       "lien": "https://www.radins.com/"
     },
     {
