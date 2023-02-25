@@ -17,7 +17,13 @@ function affichagePageAccueil () {
 
   const url = new URL(document.location.href)
 
+  let ajaxUrl = ""
 
+  if (url.origin === "https://erkomxtil.github.io" ) {
+    ajaxUrl = url.origin + "/DelaStefProd/data.json"
+  } else {
+    ajaxUrl = url.origin + "/data.json"
+  }
   
   ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse)
