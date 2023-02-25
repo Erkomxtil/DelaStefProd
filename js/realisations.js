@@ -154,7 +154,6 @@ function affichagePageRealisations() {
       var flecheDown = document.querySelector(".arrowBlock");
 
       if (scrollUser > 0 && flecheDown !== null) {
-        console.log("hello");
         flecheDown.style.display = "none";
       } else {
         if (flecheDown !== null) {
