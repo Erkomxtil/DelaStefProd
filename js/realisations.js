@@ -14,6 +14,7 @@ function affichagePageRealisations() {
   document.body.style.backgroundColor = "#1f4a99";
   const url = new URL(document.location.href)
   const ajaxUrl = url.origin + "/data.json"
+  console.log(ajaxUrl);
 
   ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse);
