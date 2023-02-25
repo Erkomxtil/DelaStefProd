@@ -16,7 +16,8 @@ function affichagePageAccueil () {
   document.body.style.backgroundColor = "#5FB7C2"
 
   const url = new URL(document.location.href)
-  const ajaxUrl = url.origin + "/DelaStefProd/data.json"
+
+
   
   ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse)

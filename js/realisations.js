@@ -2,8 +2,7 @@ import { ajaxGet } from "./ajax.js";
 
 function realisations() {
   let realisationsBtn = document.getElementById("realisations");
-  let main = document.getElementById("main");
-
+ 
   realisationsBtn.addEventListener("click", (e) => {
     affichagePageRealisations();
   });
@@ -13,7 +12,14 @@ function affichagePageRealisations() {
   /* Background de la page */
   document.body.style.backgroundColor = "#1f4a99";
   const url = new URL(document.location.href)
-  const ajaxUrl = url.origin + "/DelaStefProd/data.json"
+
+  let ajaxUrl = ""
+
+  if (url.origin === "https://erkomxtil.github.io" ) {
+    ajaxUrl = url.origin + "/DelaStefProd/data.json"
+  } else {
+    ajaxUrl = url.origin + "/data.json"
+  }
 
   ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse);
