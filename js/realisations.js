@@ -12,8 +12,10 @@ function realisations() {
 function affichagePageRealisations() {
   /* Background de la page */
   document.body.style.backgroundColor = "#1f4a99";
+  const url = new URL(document.location.href)
+  const ajaxUrl = url.origin + "/data.json"
 
-  ajaxGet("https://delastef.netlify.app/data.json", (reponse) => {
+  ajaxGet(ajaxUrl, (reponse) => {
     let dataInfos = JSON.parse(reponse);
 
     /* Titre pour la partie mobile */
@@ -146,6 +148,7 @@ function affichagePageRealisations() {
       var flecheDown = document.querySelector(".arrowBlock");
 
       if (scrollUser > 0 && flecheDown !== null) {
+        console.log("hello");
         flecheDown.style.display = "none";
       } else {
         if (flecheDown !== null) {
