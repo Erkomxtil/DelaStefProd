@@ -33,6 +33,16 @@
       "lien": "https://openclassrooms.com/fr/"
     },
     {
+      "date": "Janvier 2023",
+      "entreprise": "OpenClassrooms",
+      "fonction": "Développeur d'application Javascript / React",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React",
+      "description": "Projet d'intégration du site BOOKI",
+      "logo": "./images/logo-entreprise/booki.jpg",
+      "hover": "./images/logo-entreprise/booki-hover.jpg",
+      "lien": "https://erkomxtil.github.io/booki/"
+    },
+    {
       "date": "Juin 2021 à Septembre 2022",
       "entreprise": "Syneos Health",
       "fonction": "Développeur front-end",
