@@ -3,7 +3,7 @@
     "title": {
       "nom": "Chaffre",
       "prenom": "Stéphane",
-      "fonction": "Développeur front-end / Intégrateur web / Infographiste",
+      "fonction": "Développeur d'application javascript React / Intégrateur web / Infographiste",
       "linkedInUrl": {
         "texte": "Découvrez mon profil linkedin",
         "lien": "https://www.linkedin.com/in/stephane-chaffre/"
@@ -11,7 +11,7 @@
     },
     "textes": [
       {
-        "paragraphe": "Mon site CV a pour but de trouver l'employeur de mes rêves, car il n'est pas interdit de rêver. En effet après 5 ans passés dans le secteur du web, il me reste encore beaucoup de découverte et d'apprentissage car les techniques ainsi que les méthodes de travail changent."
+        "paragraphe": "Mon site CV a pour but de trouver l'employeur de mes rêves, car il n'est pas interdit de rêver. En effet après 8 ans passés dans le secteur du web, il me reste encore beaucoup de découverte et d'apprentissage car les techniques ainsi que les méthodes de travail changent."
       },
       {
         "paragraphe": "Je recherche un environnement dans lequel il fait bon vivre, travailler, où le bon sens est la règle d'or et le code de qualité prime sur les développements faits à la va-vite. Donc si vous êtes intéressé par une personne qui aime s'investir et donner le meilleur de soi-même, vous êtes à la bonne adresse."
