@@ -23,7 +23,17 @@
   },
   "realisations": [
     {
-      "date": "Janvier 2023 à ce jour",
+      "date": "Juillet 2023",
+      "entreprise": "OpenClassrooms",
+      "fonction": "Développeur d'application Javascript / React",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React, Redux, Redux toolkit",
+      "description": "Projet Hrnet, mise à jour d'une application JQuery vers React JS",
+      "logo": "./images/logo-entreprise/hrnet.jpg",
+      "hover": "./images/logo-entreprise/hrnet-hover.jpg",
+      "lien": "https://hrnet-erkomxtil.netlify.app/"
+    },
+    {
+      "date": "Janvier 2023 à Juillet 2023",
       "entreprise": "OpenClassrooms",
       "fonction": "Développeur d'application Javascript / React",
       "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React",
