@@ -23,6 +23,16 @@
   },
   "realisations": [
     {
+      "date": "Août 2023",
+      "entreprise": "OpenClassrooms",
+      "fonction": "Développeur d'application Javascript / React",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React JS",
+      "description": "Le but de ce projet était de développer l'ensemble de l'application avec les composants React, les routes avec React Router, en suivant les maquettes Figma !",
+      "logo": "./images/logo-entreprise/kasa.jpg",
+      "hover": "./images/logo-entreprise/kasa-hover.jpg",
+      "lien": "https://kasa-voyage.netlify.app/"
+    },
+    {
       "date": "Juillet 2023",
       "entreprise": "OpenClassrooms",
       "fonction": "Développeur d'application Javascript / React",
