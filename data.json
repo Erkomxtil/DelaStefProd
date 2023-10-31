@@ -23,6 +23,16 @@
   },
   "realisations": [
     {
+      "date": "Octobre 2023",
+      "entreprise": "Projet Clone Netflix",
+      "fonction": "Développeur d'application Javascript / React JS",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React JS, Tailwindcss, Typescript",
+      "description": "Réalisation d'un clone d'une partie du site Netflix avec du Typescript et React JS",
+      "logo": "./images/logo-entreprise/netflix.jpg",
+      "hover": "./images/logo-entreprise/netflix-hover.jpg",
+      "lien": "https://delastef-clone-netflix.netlify.app/"
+    },
+    {
       "date": "Août 2023",
       "entreprise": "Projet Kasa",
       "fonction": "Développeur d'application Javascript / React",
