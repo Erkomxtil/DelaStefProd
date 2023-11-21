@@ -27,7 +27,7 @@
       "entreprise": "Projet Clone Netflix",
       "fonction": "Développeur d'application Javascript / React JS",
       "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React JS, Tailwindcss, Typescript",
-      "description": "Réalisation d'un clone d'une partie du site Netflix avec du Typescript et React JS",
+      "description": "Réalisation d'un clone d'une partie du site Netflix avec du Typescript et React JS. Attention sur Chrome le site est classé comme un site web trompeur, pour le visualiser cliquez sur détails et ensuite sur consulter ce site dangereux.",
       "logo": "./images/logo-entreprise/netflix.jpg",
       "hover": "./images/logo-entreprise/netflix-hover.jpg",
       "lien": "https://delastef-clone-big-n.netlify.app/"
