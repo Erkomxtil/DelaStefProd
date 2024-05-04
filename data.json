@@ -23,6 +23,16 @@
   },
   "realisations": [
     {
+      "date": "Avril 2024",
+      "entreprise": "Vélo Futur",
+      "fonction": "Développeur d'application Javascript / React JS",
+      "environement": "HTML / CSS, Javascript, git, gitHub, SASS, React JS, Tailwindcss, Typescript",
+      "description": "Refonte totale du site vélo Futur, création des maquettes, réalisation de l'ensemble des pages du site avec une approche de composant. Site complètement responsive. Utilisation de React JS, tailwindcss pour la refonte, gestion du versioning avec Git Hub.",
+      "logo": "./images/logo-entreprise/velo-futur.jpg",
+      "hover": "./images/logo-entreprise/velo-futur-hover.jpg",
+      "lien": "https://velo-futur.netlify.app/"
+    },
+    {
       "date": "Octobre 2023",
       "entreprise": "Projet Clone Netflix",
       "fonction": "Développeur d'application Javascript / React JS",
