@@ -527,6 +527,7 @@ header #mainNav {
   text-align: center;
   line-height: 1.6em;
   max-width: 500px;
+  padding-bottom: 40px;
 }
 #wrapperInfos p .boldinfos {
   font-weight: bold;
