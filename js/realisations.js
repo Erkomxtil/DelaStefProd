@@ -99,7 +99,7 @@ function affichagePageRealisations() {
           if (lien !== "") {
             lienFinal =
               '<br><span class="boldinfos">Lien : </span><br>' +
-              '<a href="' +
+              '<a class="linkSite" href="' +
               lien +
               '" target="_blank">' +
               lien +
