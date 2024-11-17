@@ -90,7 +90,7 @@ function affichagePageRealisations() {
           let date = realisationsInfos[numeroLogo].date;
           let entreprise = realisationsInfos[numeroLogo].entreprise;
           let fonction = realisationsInfos[numeroLogo].fonction;
-          let environement = realisationsInfos[numeroLogo].environement;
+          let environnement = realisationsInfos[numeroLogo].environnement;
           let description = realisationsInfos[numeroLogo].description;
           let logo = realisationsInfos[numeroLogo].logo;
           let lien = realisationsInfos[numeroLogo].lien;
@@ -120,7 +120,7 @@ function affichagePageRealisations() {
             '</span><br><span class="boldinfos">Fonction : </span><br>' +
             fonction +
             '<br><span class="boldinfos">Environnement : </span><br>' +
-            environement +
+            environnement +
             '<br><span class="boldinfos">Description : </span><br>' +
             description +
             lienFinal;
