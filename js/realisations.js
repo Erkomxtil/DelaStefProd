@@ -119,7 +119,7 @@ function affichagePageRealisations() {
             entreprise +
             '</span><br><span class="boldinfos">Fonction : </span><br>' +
             fonction +
-            '<br><span class="boldinfos">Environement : </span><br>' +
+            '<br><span class="boldinfos">Environnement : </span><br>' +
             environement +
             '<br><span class="boldinfos">Description : </span><br>' +
             description +
